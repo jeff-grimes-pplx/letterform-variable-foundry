@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Letterform — Aptide Variable Foundry &amp; OpenType Engineering Workbench</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f141d' stroke='%2338bdf8' stroke-width='2'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='%23f4f0e8' font-family='sans-serif' font-weight='700' font-size='16'%3EAg%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/Aptide-VF.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-view="unified">
+  <!-- TOP FOUNDRY COMMAND BAR -->
+  <header class="foundry-topbar">
+    <div class="brand-cluster">
+      <div class="brand-mark" aria-hidden="true">
+        <span class="brand-glyph">Ag</span>
+      </div>
+      <div class="brand-titles">
+        <div class="brand-title-row">
+          <h1 class="brand-name">LETTERFORM</h1>
+          <span class="brand-divider">/</span>
+          <span class="brand-sub">APTIDE VARIABLE FOUNDRY</span>
+          <span class="version-pill">v1.103 · UPM 1000</span>
+        </div>
+        <p class="brand-meta">
+          548 Glyphs · 9 UFO Masters · 26 Languages (<kbd>wght 200–800</kbd> × <kbd>wdth 75–125</kbd>)
+        </p>
+      </div>
+    </div>
+
+    <!-- WORKSPACE VIEW ROUTER -->
+    <nav class="workspace-tabs" aria-label="Foundry workspace views">
+      <button type="button" class="ws-tab active" data-ws-view="unified">
+        <span class="ws-dot"></span>Unified Foundry
+      </button>
+      <button type="button" class="ws-tab" data-ws-view="cad">
+        Bézier CAD Editor
+      </button>
+      <button type="button" class="ws-tab" data-ws-view="opentype">
+        OpenType &amp; Kerning Lab
+      </button>
+      <button type="button" class="ws-tab" data-ws-view="atlas">
+        548-Glyph Atlas
+      </button>
+      <button type="button" class="ws-tab" data-ws-view="specimen">
+        Specimen &amp; QA Receipts
+      </button>
+    </nav>
+
+    <!-- REAL BINARY DOWNLOADS & QA STATUS -->
+    <div class="topbar-actions">
+      <button type="button" class="qa-status-pill" id="btnOpenQaModal" title="Inspect FontBakery, OTS-Sanitize &amp; HarfBuzz compiler receipts">
+        <span class="status-led"></span>
+        <span>FONTBAKERY <strong>0 FAIL</strong> · OTS <strong>17/17</strong></span>
+      </button>
+      <div class="download-group" role="group" aria-label="Download compiled font binaries">
+        <a class="dl-btn dl-primary" href="fonts/Aptide-VF.ttf" download="Aptide-VF.ttf" title="Download compiled OpenType Variable Font (.ttf, 318 KB)">
+          <span class="dl-format">.TTF</span>
+          <span class="dl-label">Variable</span>
+          <span class="dl-size">318K</span>
+        </a>
+        <a class="dl-btn dl-primary" href="fonts/Aptide-VF.woff2" download="Aptide-VF.woff2" title="Download compiled WOFF2 Variable Webfont (.woff2, 101 KB)">
+          <span class="dl-format">.WOFF2</span>
+          <span class="dl-label">Webfont</span>
+          <span class="dl-size">101K</span>
+        </a>
+        <a class="dl-btn" href="fonts/Aptide-Specimen.pdf" download="Aptide-Specimen.pdf" target="_blank" rel="noopener" title="Download 15-page A4 Type Specimen Sheet PDF (869 KB)">
+          <span class="dl-format">PDF</span>
+          <span class="dl-label">Specimen</span>
+        </a>
+        <a class="dl-btn" href="fonts/Aptide-Static-15.zip" download="Aptide-Static-15.zip" title="Download all 15 static instances (.ttf archive, 420 KB)">
+          <span class="dl-format">ZIP</span>
+          <span class="dl-label">15 Statics</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- LIVE TELEMETRY RIBBON -->
+  <section class="telemetry-bar" aria-label="Live design-space telemetry">
+    <div class="tele-item">
+      <span class="tele-label">COORD</span>
+      <span class="tele-val" id="teleCoord">wght 400 · wdth 100%</span>
+    </div>
+    <div class="tele-item">
+      <span class="tele-label">INSTANCE</span>
+      <span class="tele-val" id="teleInstance">Regular (400/100%)</span>
+    </div>
+    <div class="tele-item">
+      <span class="tele-label">STEMS</span>
+      <span class="tele-val" id="teleStems">V 82.0u · H 71.0u</span>
+    </div>
+    <div class="tele-item">
+      <span class="tele-label">GLYPH</span>
+      <span class="tele-val" id="teleGlyph">R · U+0052 · 599u</span>
+    </div>
+    <div class="tele-item">
+      <span class="tele-label">BEARINGS</span>
+      <span class="tele-val" id="teleSidebearings">LSB 64u · RSB 22u</span>
+    </div>
+    <div class="tele-item">
+      <span class="tele-label">OPENTYPE</span>
+      <span class="tele-val" id="teleFeatures">'liga' 1, 'kern' 1</span>
+    </div>
+  </section>
+
+  <!-- MAIN UNIFIED 3-COLUMN FOUNDRY WORKBENCH -->
+  <main class="foundry-grid" id="foundryGrid">
+
+    <!-- ===================================================================
+         COLUMN 1 (LEFT): 2D DESIGN-SPACE INTERPOLATOR & 9-MASTER WEIGHTING
+         =================================================================== -->
+    <aside class="panel col-designspace" id="panelDesignSpace">
+      <div class="panel-header">
+        <div>
+          <span class="panel-kicker">01 // DESIGN-SPACE ENGINE</span>
+          <h2 class="panel-title">9-Master 2D Interpolator</h2>
+        </div>
+        <button type="button" class="orbit-btn" id="btnOrbit" aria-pressed="false" title="Animate continuous Lissajous orbit across Weight × Width axes">
+          <span class="orbit-dot"></span>
+          <span id="orbitBtnText">Orbit Axes</span>
+        </button>
+      </div>
+
+      <!-- 2D CARTESIAN PAD (wght 200-800 x wdth 75-125) -->
+      <div class="pad-container">
+        <div class="pad-axis-top">
+          <span>wdth 75% (Compressed)</span>
+          <span>100% (Normal)</span>
+          <span>125% (Extended)</span>
+        </div>
+        <div class="pad-stage-wrap">
+          <div class="pad-axis-left">
+            <span>800</span>
+            <span>400</span>
+            <span>200</span>
+          </div>
+          <div class="cartesian-pad" id="cartesianPad" tabindex="0" role="slider" aria-label="2D Design Space Coordinate Pad" aria-valuemin="200" aria-valuemax="800" aria-valuenow="400">
+            <svg class="pad-svg" id="padSvg" viewBox="0 0 320 260" preserveAspectRatio="none">
+              <defs>
+                <radialGradient id="padGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="rgba(56, 189, 248, 0.28)"/>
+                  <stop offset="100%" stop-color="rgba(56, 189, 248, 0)"/>
+                </radialGradient>
+              </defs>
+              <!-- Grid subdivisions -->
+              <g class="pad-grid-lines">
+                <line x1="28" y1="24" x2="292" y2="24"/>
+                <line x1="28" y1="90" x2="292" y2="90" stroke-dasharray="3 3"/>
+                <line x1="28" y1="135" x2="292" y2="135" stroke-dasharray="3 3"/>
+                <line x1="28" y1="180" x2="292" y2="180"/>
+                <line x1="28" y1="236" x2="292" y2="236"/>
+
+                <line x1="28" y1="24" x2="28" y2="236"/>
+                <line x1="94" y1="24" x2="94" y2="236" stroke-dasharray="3 3"/>
+                <line x1="160" y1="24" x2="160" y2="236"/>
+                <line x1="226" y1="24" x2="226" y2="236" stroke-dasharray="3 3"/>
+                <line x1="292" y1="24" x2="292" y2="236"/>
+              </g>
+              <!-- Dynamic interpolation tether lines from active cursor to 9 masters -->
+              <g id="padTethers"></g>
+              <!-- 15 Static Instance Nodes -->
+              <g id="padInstanceNodes"></g>
+              <!-- 9 UFO Master Nodes -->
+              <g id="padMasterNodes"></g>
+              <!-- Active Cursor Crosshair -->
+              <g id="padCursorGroup">
+                <circle id="padCursorHalo" cx="160" cy="180" r="24" fill="url(#padGlow)"/>
+                <line id="padCrossX" x1="160" y1="24" x2="160" y2="236" class="pad-crosshair"/>
+                <line id="padCrossY" x1="28" y1="180" x2="292" y2="180" class="pad-crosshair"/>
+                <circle id="padCursorDot" cx="160" cy="180" r="6.5" class="pad-cursor-dot"/>
+              </g>
+            </svg>
+            <div class="pad-live-readout" id="padReadout">400 / 100%</div>
+          </div>
+        </div>
+        <div class="pad-legend">
+          <span><i class="legend-sq master"></i> 9 UFO Masters</span>
+          <span><i class="legend-sq instance"></i> 15 Static Instances</span>
+          <span><i class="legend-sq active"></i> Live Design Coord</span>
+        </div>
+      </div>
+
+      <!-- PRECISION AXIS SLIDERS -->
+      <div class="axis-sliders">
+        <div class="slider-block">
+          <div class="slider-header">
+            <label for="sliderWght">Weight Axis (<code>wght</code>)</label>
+            <output id="outWght" for="sliderWght">400</output>
+          </div>
+          <input type="range" id="sliderWght" min="200" max="800" step="1" value="400">
+          <div class="slider-ticks">
+            <button type="button" data-set-wght="200">200 ExtraLight</button>
+            <button type="button" data-set-wght="400">400 Regular</button>
+            <button type="button" data-set-wght="600">600 SemiBold</button>
+            <button type="button" data-set-wght="800">800 ExtraBold</button>
+          </div>
+        </div>
+
+        <div class="slider-block">
+          <div class="slider-header">
+            <label for="sliderWdth">Width Axis (<code>wdth</code>)</label>
+            <output id="outWdth" for="sliderWdth">100%</output>
+          </div>
+          <input type="range" id="sliderWdth" min="75" max="125" step="0.5" value="100">
+          <div class="slider-ticks">
+            <button type="button" data-set-wdth="75">75% Comp</button>
+            <button type="button" data-set-wdth="87.5">88% Cond</button>
+            <button type="button" data-set-wdth="100">100% Norm</button>
+            <button type="button" data-set-wdth="125">125% Extd</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9-MASTER BILINEAR CONTRIBUTION MATRIX -->
+      <div class="master-weights-box">
+        <div class="sub-header">
+          <span>9-MASTER WEIGHTING</span>
+          <span class="mono-dim" id="activeFormulaTag">Piecewise Bilinear</span>
+        </div>
+        <div class="master-9-grid" id="master9Grid" aria-label="9 master interpolation weights">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+
+      <!-- 15 NAMED INSTANCE PRESETS -->
+      <div class="instances-box">
+        <div class="sub-header">
+          <span>15 NAMED STAT/FVAR INSTANCES</span>
+          <span class="mono-dim">Click to snap</span>
+        </div>
+        <div class="instance-pills" id="instancePills">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+    </aside>
+
+    <!-- ===================================================================
+         COLUMN 2 (CENTER): BÉZIER CONTOUR EDITOR + LIVE SPECIMEN STAGE
+         =================================================================== -->
+    <section class="col-center-stage">
+
+      <!-- TOP DECK: INTERACTIVE BÉZIER CONTOUR & 9-MASTER OVERLAY EDITOR -->
+      <div class="panel cad-editor-panel" id="panelCadEditor">
+        <div class="panel-header cad-header">
+          <div class="cad-title-cluster">
+            <span class="panel-kicker">02 // BÉZIER CONTOUR &amp; MASTER-OVERLAY INSPECTOR</span>
+            <div class="cad-glyph-selector-row">
+              <h2 class="panel-title" id="cadGlyphTitle">Glyph ‘R’ · U+0052</h2>
+              <div class="quick-glyph-pills" id="quickGlyphPills" role="group" aria-label="Featured showcase glyphs">
+                <button type="button" class="qg-pill active" data-glyph="R">R</button>
+                <button type="button" class="qg-pill" data-glyph="g">g</button>
+                <button type="button" class="qg-pill" data-glyph="a">a</button>
+                <button type="button" class="qg-pill" data-glyph="A">A</button>
+                <button type="button" class="qg-pill" data-glyph="fi">fi</button>
+                <button type="button" class="qg-pill" data-glyph="S">S</button>
+                <button type="button" class="qg-pill" data-glyph="Q">Q</button>
+                <button type="button" class="qg-pill" data-glyph="Oslash">Ø</button>
+                <button type="button" class="qg-pill" data-glyph="germandbls">ß</button>
+                <button type="button" class="qg-pill" data-glyph="rcaron">ř</button>
+                <button type="button" class="qg-pill" data-glyph="zero.slash">0̸</button>
+                <button type="button" class="qg-pill" data-glyph="ampersand">&amp;</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CAD LAYER TOGGLES -->
+          <div class="cad-toggles" role="group" aria-label="Contour inspector overlays">
+            <label class="cad-toggle"><input type="checkbox" id="chkMasters" checked><span>9 Masters</span></label>
+            <label class="cad-toggle"><input type="checkbox" id="chkNodes" checked><span>Nodes &amp; Handles</span></label>
+            <label class="cad-toggle"><input type="checkbox" id="chkCallouts" checked><span>Stem &amp; LSB/RSB</span></label>
+            <label class="cad-toggle"><input type="checkbox" id="chkSkeleton" checked><span>Skeleton</span></label>
+            <label class="cad-toggle"><input type="checkbox" id="chkFill" checked><span>Fill</span></label>
+            <button type="button" class="cad-reset-btn" id="btnResetNodes" hidden>Reset Node Edits</button>
+          </div>
+        </div>
+
+        <!-- VECTOR CAD CANVAS -->
+        <div class="cad-canvas-wrap">
+          <svg class="cad-svg" id="cadSvg" viewBox="-140 -180 1080 1120" preserveAspectRatio="xMidYMid meet" aria-label="Interactive Bézier contour editor">
+            <!-- Populated dynamically with metric lines, 9 master ghost outlines, active filled/stroked contour, stem thickness callouts, LSB/RSB arrows, skeleton, and draggable on/off-curve nodes -->
+          </svg>
+
+          <!-- Floating CAD Overlay HUD -->
+          <div class="cad-hud-top-left">
+            <span class="hud-chip" id="hudNodeStats">36 pts · 12 cubics · 2 contours</span>
+            <span class="hud-chip hud-interactive" id="hudDragHint">Drag ■ on-curve or ● handle to sculpt live</span>
+          </div>
+          <div class="cad-hud-bottom-left" id="cadMasterLegend">
+            <span class="m-tag m-200">200 XLt</span>
+            <span class="m-tag m-400">400 Reg</span>
+            <span class="m-tag m-800">800 XBd</span>
+          </div>
+          <div class="cad-hud-bottom-right" id="cadMetricSummary">
+            <span>UPM 1000</span>
+            <span>Asc 740</span>
+            <span>Cap 700</span>
+            <span>x 520</span>
+            <span>Desc −210</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM DECK: LIVE KINETIC & EDITORIAL SPECIMEN STAGE (ZERO CLIPPING) -->
+      <div class="panel specimen-stage-panel" id="panelSpecimenStage">
+        <div class="panel-header specimen-header">
+          <div>
+            <span class="panel-kicker">03 // LIVE VARIABLE FONT &amp; EDITORIAL SPECIMEN STAGE</span>
+            <h2 class="panel-title">Real-Time OpenType Shaping Stage</h2>
+          </div>
+
+          <div class="specimen-mode-tabs" role="tablist" aria-label="Specimen display modes">
+            <button type="button" class="spec-tab active" data-spec-mode="editorial">Editorial Pangram</button>
+            <button type="button" class="spec-tab" data-spec-mode="waterfall">9-Master Waterfall</button>
+            <button type="button" class="spec-tab" data-spec-mode="languages">26-Language Proof</button>
+            <button type="button" class="spec-tab" data-spec-mode="receipts">Compiler Receipts</button>
+          </div>
+        </div>
+
+        <!-- SPECIMEN CONTROLS BAR -->
+        <div class="specimen-toolbar" id="specimenToolbar">
+          <div class="preset-phrases" aria-label="Specimen text presets">
+            <button type="button" class="phrase-btn active" data-phrase="Sphinx of black quartz, judge my vow — 0123456789 &amp; fi fl ffi">Quartz Pangram</button>
+            <button type="button" class="phrase-btn" data-phrase="AVANT-GARDE TYPOGRAPHY: To Wa LT Yo P. 1/2 3/4 [2026]">Kerning &amp; Fractions</button>
+            <button type="button" class="phrase-btn" data-phrase="ZAŻÓŁĆ GĘŚLĄ JAŹŃ · Þjóðhátíð · Příliš žluťoučký kůň">Diacritic Stress</button>
+            <button type="button" class="phrase-btn" data-phrase="H₂O + CO₂ ⇌ H₂CO₃ · E=mc² · €14,890.00 vs €11,111.11">Sci &amp; Tabular</button>
+          </div>
+
+          <div class="specimen-sliders">
+            <label class="mini-slider">
+              <span>Size</span>
+              <input type="range" id="specSizeSlider" min="20" max="68" value="38">
+              <output id="specSizeOut">38px</output>
+            </label>
+            <label class="mini-slider">
+              <span>Track</span>
+              <input type="range" id="specTrackSlider" min="-4" max="12" step="0.5" value="0">
+              <output id="specTrackOut">0%</output>
+            </label>
+          </div>
+        </div>
+
+        <!-- MODE 1: EDITORIAL PANGRAM & LIVE METRIC STAGE -->
+        <div class="spec-mode-view active" id="specViewEditorial">
+          <div class="editorial-canvas-box">
+            <div class="editorial-guide-labels" aria-hidden="true">
+              <span>ASC 740</span>
+              <span>CAP 700</span>
+              <span>X-HT 520</span>
+              <span>BASE 0</span>
+              <span>DESC −210</span>
+            </div>
+            <div
+              class="live-editable-specimen"
+              id="liveSpecimenText"
+              contenteditable="true"
+              spellcheck="false"
+              aria-label="Editable live variable font specimen">Sphinx of black quartz, judge my vow — 0123456789 &amp; fi fl ffi</div>
+          </div>
+          <div class="editorial-subdeck">
+            <div class="subdeck-col">
+              <span class="subdeck-label">EDITORIAL BODY SAMPLE (15px / 1.45 · AUTO-KERNED)</span>
+              <p class="editorial-paragraph" id="liveEditorialPara">
+                Aptide Variable is compiled directly from 9 point-compatible UFO masters across Weight (200–800) and Width (75–125%). Every glyph—from standard ligatures (fi, fl, ffi) and diagonal fractions (1/2, 3/4) to Central European diacritics (Ř, Ł, Ő, Ț, ß)—interpolates with zero contour kinks or pair collisions.
+              </p>
+            </div>
+            <div class="subdeck-col subdeck-numerals">
+              <span class="subdeck-label">LIVE TABULAR &amp; FRACTION PROOF</span>
+              <div class="numeral-compare" id="liveNumeralProof">
+                <div class="num-row"><code>111,111.11</code> <span class="num-badge">tnum aligned</span></div>
+                <div class="num-row"><code>888,888.88</code> <span class="num-badge">0̸ slashed zero</span></div>
+                <div class="num-row"><code>1/2  3/4  7/8  1st  2nd  H₂O  E=mc²</code></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODE 2: 9-MASTER WEIGHT x WIDTH WATERFALL -->
+        <div class="spec-mode-view" id="specViewWaterfall" hidden>
+          <div class="waterfall-grid" id="waterfallGrid">
+            <!-- Populated by app.js -->
+          </div>
+        </div>
+
+        <!-- MODE 3: 26-LANGUAGE HARFBUZZ PROOF -->
+        <div class="spec-mode-view" id="specViewLanguages" hidden>
+          <div class="lang-proof-grid" id="langProofGrid">
+            <!-- Populated by app.js -->
+          </div>
+        </div>
+
+        <!-- MODE 4: COMPILER & QA RECEIPTS -->
+        <div class="spec-mode-view" id="specViewReceipts" hidden>
+          <div class="receipts-grid" id="receiptsGrid">
+            <!-- Populated by app.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         COLUMN 3 (RIGHT): OPENTYPE FEATURE & KERNING LAB + 548-GLYPH ATLAS
+         =================================================================== -->
+    <aside class="col-right-lab">
+
+      <!-- TOP RIGHT: OPENTYPE FEATURE & LIVE GPOS KERNING LABORATORY -->
+      <div class="panel opentype-lab-panel" id="panelOpenTypeLab">
+        <div class="panel-header">
+          <div>
+            <span class="panel-kicker">04 // OPENTYPE GSUB / GPOS LABORATORY</span>
+            <h2 class="panel-title">Features &amp; Live Kerning</h2>
+          </div>
+          <span class="ot-count-badge" id="otActiveCountBadge">2 Active</span>
+        </div>
+
+        <!-- 8 OPENTYPE FEATURE SWITCH CARDS -->
+        <div class="ot-feature-grid" id="otFeatureGrid" role="group" aria-label="OpenType feature toggles">
+          <button type="button" class="ot-card active" data-ot="liga" aria-pressed="true">
+            <div class="ot-card-top">
+              <code class="ot-tag">liga</code>
+              <span class="ot-name">Standard Ligatures</span>
+              <span class="ot-state">ON</span>
+            </div>
+            <div class="ot-preview">fi fl ff ffi ffl</div>
+          </button>
+
+          <button type="button" class="ot-card active" data-ot="kern" aria-pressed="true">
+            <div class="ot-card-top">
+              <code class="ot-tag">kern</code>
+              <span class="ot-name">Pair &amp; Class Kerning</span>
+              <span class="ot-state">ON</span>
+            </div>
+            <div class="ot-preview">AV To Wa LT Yo</div>
+          </button>
+
+          <button type="button" class="ot-card" data-ot="tnum" aria-pressed="false">
+            <div class="ot-card-top">
+              <code class="ot-tag">tnum</code>
+              <span class="ot-name">Tabular Figures</span>
+              <span class="ot-state">OFF</span>
+            </div>
+            <div class="ot-preview">111.11 · 888.88</div>
+          </button>
+
+          <button type="button" class="ot-card" data-ot="zero" aria-pressed="false">
+            <div class="ot-card-top">
+              <code class="ot-tag">zero</code>
+              <span class="ot-name">Slashed Zero</span>
+              <span class="ot-state">OFF</span>
+            </div>
+            <div class="ot-preview">0O0 · 2026</div>
+          </button>
+
+          <button type="button" class="ot-card" data-ot="frac" aria-pressed="false">
+            <div class="ot-card-top">
+              <code class="ot-tag">frac</code>
+              <span class="ot-name">Diagonal Fractions</span>
+              <span class="ot-state">OFF</span>
+            </div>
+            <div class="ot-preview">1/2 3/4 7/8</div>
+          </button>
+
+          <button type="button" class="ot-card" data-ot="case" aria-pressed="false">
+            <div class="ot-card-top">
+              <code class="ot-tag">case</code>
+              <span class="ot-name">Case-Sensitive</span>
+              <span class="ot-state">OFF</span>
+            </div>
+            <div class="ot-preview">[H-O-T] «A—Z»</div>
+          </button>
+
+          <button type="button" class="ot-card" data-ot="onum" aria-pressed="false">
+            <div class="ot-card-top">
+              <code class="ot-tag">onum</code>
+              <span class="ot-name">Oldstyle Figures</span>
+              <span class="ot-state">OFF</span>
+            </div>
+            <div class="ot-preview">0123456789</div>
+          </button>
+
+          <button type="button" class="ot-card" data-ot="ordn" aria-pressed="false">
+            <div class="ot-card-top">
+              <code class="ot-tag">ordn/sups</code>
+              <span class="ot-name">Ordinals &amp; Sci</span>
+              <span class="ot-state">OFF</span>
+            </div>
+            <div class="ot-preview">1st 2nd Nº H₂O</div>
+          </button>
+        </div>
+
+        <!-- INTERACTIVE GPOS KERNING PAIR INSPECTOR WITH LIVE UNIT BADGES -->
+        <div class="kerning-inspector-box">
+          <div class="sub-header">
+            <span>GPOS KERNING PAIR INSPECTOR (LIVE UNITS)</span>
+            <span class="mono-dim" id="kernPairHeaderVal">AV: −88u</span>
+          </div>
+
+          <!-- Curated kerning pair chips with live interpolated unit badges -->
+          <div class="kern-pair-strip" id="kernPairStrip" role="group" aria-label="Interactive kerning pairs">
+            <!-- Populated by app.js: AV -88u, To -96u, Wa -74u, LT -82u, Yo -96u, FA -70u, P. -110u, Vř -68u -->
+          </div>
+
+          <!-- Dual-glyph vector kerning visualization canvas -->
+          <div class="kern-vector-stage">
+            <svg class="kern-svg" id="kernSvg" viewBox="0 -140 1300 980" preserveAspectRatio="xMidYMid meet" aria-label="Dual-glyph GPOS kerning pair vector diagram">
+              <!-- Populated by app.js -->
+            </svg>
+            <div class="kern-stage-caption" id="kernStageCaption">
+              <span>Pair <strong>A + V</strong></span>
+              <span id="kernDeltaText">GPOS Adjustment: −88u (Compensates diagonal counter)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM RIGHT: 548-GLYPH MULTILINGUAL ATLAS -->
+      <div class="panel glyph-atlas-panel" id="panelGlyphAtlas">
+        <div class="panel-header atlas-header">
+          <div>
+            <span class="panel-kicker">05 // 548-GLYPH MULTILINGUAL MAP</span>
+            <h2 class="panel-title">Complete Glyph Atlas <span class="glyph-total-count" id="glyphFilterCount">(548)</span></h2>
+          </div>
+          <input type="search" class="atlas-search" id="atlasSearch" placeholder="Search glyph, char, or U+hex…" aria-label="Search 548 glyphs">
+        </div>
+
+        <div class="atlas-filter-pills" id="atlasFilterPills" role="tablist" aria-label="Glyph category filters">
+          <button type="button" class="af-pill active" data-cat="all">All 548</button>
+          <button type="button" class="af-pill" data-cat="ascii">ASCII</button>
+          <button type="button" class="af-pill" data-cat="latin">Latin Ext</button>
+          <button type="button" class="af-pill" data-cat="figures">Figures</button>
+          <button type="button" class="af-pill" data-cat="opentype">OpenType</button>
+          <button type="button" class="af-pill" data-cat="symbols">Symbols</button>
+          <button type="button" class="af-pill" data-cat="marks">Marks</button>
+        </div>
+
+        <div class="glyph-cells-scroll" id="glyphCellsScroll" role="listbox" aria-label="548 compiled glyphs">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+
+    </aside>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

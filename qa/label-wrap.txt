@@ -1,0 +1,22 @@
+label/tooltip/banner wrap-clip receipt — local app/
+1440x900 tester: 0 finding(s)
+1440x900 glyphs: 0 finding(s)
+1440x900 drawing: 0 finding(s)
+1440x900 notes: 0 finding(s)
+1440x900 errors: 0
+1280x720 tester: 0 finding(s)
+1280x720 glyphs: 0 finding(s)
+1280x720 drawing: 0 finding(s)
+1280x720 notes: 0 finding(s)
+1280x720 errors: 0
+390x844 tester: 0 finding(s)
+390x844 glyphs: 0 finding(s)
+390x844 drawing: 3 finding(s)
+390x844 notes: 0 finding(s)
+390x844 errors: 0
+
+{"viewport":"390x844","view":"drawing","tag":"span","id":"draw-name","cls":"","text":"a · U+0061","multiLine":true,"clipped":false,"offscreen":false,"w":91,"h":56,"sw":91,"cw":91}
+{"viewport":"390x844","view":"drawing","tag":"span","id":"draw-stage-label","cls":"dim","text":"outline · final","multiLine":true,"clipped":false,"offscreen":false,"w":74,"h":39,"sw":74,"cw":74}
+{"viewport":"390x844","view":"drawing","tag":"span","id":"draw-axes","cls":"dim","text":"wght 400 · wdth 100 · Regular","multiLine":true,"clipped":false,"offscreen":false,"w":173,"h":39,"sw":173,"cw":173}
+
+RESULT: 3 finding(s)

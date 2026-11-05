@@ -1,0 +1,2198 @@
+{
+"glyph_count": 548,
+"encoded": 477,
+"glyphs": [
+{
+"name": ".notdef",
+"unicode": null
+},
+{
+"name": "A",
+"unicode": "U+0041"
+},
+{
+"name": "B",
+"unicode": "U+0042"
+},
+{
+"name": "C",
+"unicode": "U+0043"
+},
+{
+"name": "D",
+"unicode": "U+0044"
+},
+{
+"name": "E",
+"unicode": "U+0045"
+},
+{
+"name": "F",
+"unicode": "U+0046"
+},
+{
+"name": "G",
+"unicode": "U+0047"
+},
+{
+"name": "H",
+"unicode": "U+0048"
+},
+{
+"name": "I",
+"unicode": "U+0049"
+},
+{
+"name": "J",
+"unicode": "U+004A"
+},
+{
+"name": "K",
+"unicode": "U+004B"
+},
+{
+"name": "L",
+"unicode": "U+004C"
+},
+{
+"name": "M",
+"unicode": "U+004D"
+},
+{
+"name": "N",
+"unicode": "U+004E"
+},
+{
+"name": "O",
+"unicode": "U+004F"
+},
+{
+"name": "P",
+"unicode": "U+0050"
+},
+{
+"name": "Q",
+"unicode": "U+0051"
+},
+{
+"name": "R",
+"unicode": "U+0052"
+},
+{
+"name": "S",
+"unicode": "U+0053"
+},
+{
+"name": "T",
+"unicode": "U+0054"
+},
+{
+"name": "U",
+"unicode": "U+0055"
+},
+{
+"name": "V",
+"unicode": "U+0056"
+},
+{
+"name": "W",
+"unicode": "U+0057"
+},
+{
+"name": "X",
+"unicode": "U+0058"
+},
+{
+"name": "Y",
+"unicode": "U+0059"
+},
+{
+"name": "Z",
+"unicode": "U+005A"
+},
+{
+"name": "a",
+"unicode": "U+0061"
+},
+{
+"name": "b",
+"unicode": "U+0062"
+},
+{
+"name": "c",
+"unicode": "U+0063"
+},
+{
+"name": "d",
+"unicode": "U+0064"
+},
+{
+"name": "e",
+"unicode": "U+0065"
+},
+{
+"name": "f",
+"unicode": "U+0066"
+},
+{
+"name": "g",
+"unicode": "U+0067"
+},
+{
+"name": "h",
+"unicode": "U+0068"
+},
+{
+"name": "i",
+"unicode": "U+0069"
+},
+{
+"name": "j",
+"unicode": "U+006A"
+},
+{
+"name": "k",
+"unicode": "U+006B"
+},
+{
+"name": "l",
+"unicode": "U+006C"
+},
+{
+"name": "m",
+"unicode": "U+006D"
+},
+{
+"name": "n",
+"unicode": "U+006E"
+},
+{
+"name": "o",
+"unicode": "U+006F"
+},
+{
+"name": "p",
+"unicode": "U+0070"
+},
+{
+"name": "q",
+"unicode": "U+0071"
+},
+{
+"name": "r",
+"unicode": "U+0072"
+},
+{
+"name": "s",
+"unicode": "U+0073"
+},
+{
+"name": "t",
+"unicode": "U+0074"
+},
+{
+"name": "u",
+"unicode": "U+0075"
+},
+{
+"name": "v",
+"unicode": "U+0076"
+},
+{
+"name": "w",
+"unicode": "U+0077"
+},
+{
+"name": "x",
+"unicode": "U+0078"
+},
+{
+"name": "y",
+"unicode": "U+0079"
+},
+{
+"name": "z",
+"unicode": "U+007A"
+},
+{
+"name": "zero",
+"unicode": "U+0030"
+},
+{
+"name": "one",
+"unicode": "U+0031"
+},
+{
+"name": "two",
+"unicode": "U+0032"
+},
+{
+"name": "three",
+"unicode": "U+0033"
+},
+{
+"name": "four",
+"unicode": "U+0034"
+},
+{
+"name": "five",
+"unicode": "U+0035"
+},
+{
+"name": "six",
+"unicode": "U+0036"
+},
+{
+"name": "seven",
+"unicode": "U+0037"
+},
+{
+"name": "eight",
+"unicode": "U+0038"
+},
+{
+"name": "nine",
+"unicode": "U+0039"
+},
+{
+"name": "dotlessi",
+"unicode": "U+0131"
+},
+{
+"name": "uni0237",
+"unicode": "U+0237"
+},
+{
+"name": "space",
+"unicode": "U+0020"
+},
+{
+"name": "uni00A0",
+"unicode": "U+00A0"
+},
+{
+"name": "uni2009",
+"unicode": "U+2009"
+},
+{
+"name": "uni2007",
+"unicode": "U+2007"
+},
+{
+"name": "period",
+"unicode": "U+002E"
+},
+{
+"name": "comma",
+"unicode": "U+002C"
+},
+{
+"name": "colon",
+"unicode": "U+003A"
+},
+{
+"name": "semicolon",
+"unicode": "U+003B"
+},
+{
+"name": "ellipsis",
+"unicode": "U+2026"
+},
+{
+"name": "periodcentered",
+"unicode": "U+00B7"
+},
+{
+"name": "bullet",
+"unicode": "U+2022"
+},
+{
+"name": "exclam",
+"unicode": "U+0021"
+},
+{
+"name": "exclamdown",
+"unicode": "U+00A1"
+},
+{
+"name": "question",
+"unicode": "U+003F"
+},
+{
+"name": "questiondown",
+"unicode": "U+00BF"
+},
+{
+"name": "quotesingle",
+"unicode": "U+0027"
+},
+{
+"name": "quotedbl",
+"unicode": "U+0022"
+},
+{
+"name": "quoteright",
+"unicode": "U+2019"
+},
+{
+"name": "quoteleft",
+"unicode": "U+2018"
+},
+{
+"name": "quotesinglbase",
+"unicode": "U+201A"
+},
+{
+"name": "quotedblright",
+"unicode": "U+201D"
+},
+{
+"name": "quotedblleft",
+"unicode": "U+201C"
+},
+{
+"name": "quotedblbase",
+"unicode": "U+201E"
+},
+{
+"name": "guilsinglleft",
+"unicode": "U+2039"
+},
+{
+"name": "guilsinglright",
+"unicode": "U+203A"
+},
+{
+"name": "guillemotleft",
+"unicode": "U+00AB"
+},
+{
+"name": "guillemotright",
+"unicode": "U+00BB"
+},
+{
+"name": "minute",
+"unicode": "U+2032"
+},
+{
+"name": "second",
+"unicode": "U+2033"
+},
+{
+"name": "hyphen",
+"unicode": "U+002D"
+},
+{
+"name": "uni2010",
+"unicode": "U+2010"
+},
+{
+"name": "uni2011",
+"unicode": "U+2011"
+},
+{
+"name": "endash",
+"unicode": "U+2013"
+},
+{
+"name": "emdash",
+"unicode": "U+2014"
+},
+{
+"name": "minus",
+"unicode": "U+2212"
+},
+{
+"name": "underscore",
+"unicode": "U+005F"
+},
+{
+"name": "slash",
+"unicode": "U+002F"
+},
+{
+"name": "backslash",
+"unicode": "U+005C"
+},
+{
+"name": "fraction",
+"unicode": "U+2044"
+},
+{
+"name": "bar",
+"unicode": "U+007C"
+},
+{
+"name": "brokenbar",
+"unicode": "U+00A6"
+},
+{
+"name": "parenleft",
+"unicode": "U+0028"
+},
+{
+"name": "parenright",
+"unicode": "U+0029"
+},
+{
+"name": "bracketleft",
+"unicode": "U+005B"
+},
+{
+"name": "bracketright",
+"unicode": "U+005D"
+},
+{
+"name": "braceleft",
+"unicode": "U+007B"
+},
+{
+"name": "braceright",
+"unicode": "U+007D"
+},
+{
+"name": "asterisk",
+"unicode": "U+002A"
+},
+{
+"name": "numbersign",
+"unicode": "U+0023"
+},
+{
+"name": "ampersand",
+"unicode": "U+0026"
+},
+{
+"name": "at",
+"unicode": "U+0040"
+},
+{
+"name": "percent",
+"unicode": "U+0025"
+},
+{
+"name": "perthousand",
+"unicode": "U+2030"
+},
+{
+"name": "degree",
+"unicode": "U+00B0"
+},
+{
+"name": "section",
+"unicode": "U+00A7"
+},
+{
+"name": "paragraph",
+"unicode": "U+00B6"
+},
+{
+"name": "dagger",
+"unicode": "U+2020"
+},
+{
+"name": "daggerdbl",
+"unicode": "U+2021"
+},
+{
+"name": "copyright",
+"unicode": "U+00A9"
+},
+{
+"name": "registered",
+"unicode": "U+00AE"
+},
+{
+"name": "trademark",
+"unicode": "U+2122"
+},
+{
+"name": "ordfeminine",
+"unicode": "U+00AA"
+},
+{
+"name": "ordmasculine",
+"unicode": "U+00BA"
+},
+{
+"name": "dollar",
+"unicode": "U+0024"
+},
+{
+"name": "cent",
+"unicode": "U+00A2"
+},
+{
+"name": "sterling",
+"unicode": "U+00A3"
+},
+{
+"name": "yen",
+"unicode": "U+00A5"
+},
+{
+"name": "Euro",
+"unicode": "U+20AC"
+},
+{
+"name": "currency",
+"unicode": "U+00A4"
+},
+{
+"name": "uni20B9",
+"unicode": "U+20B9"
+},
+{
+"name": "uni20BD",
+"unicode": "U+20BD"
+},
+{
+"name": "uni20A9",
+"unicode": "U+20A9"
+},
+{
+"name": "uni20BA",
+"unicode": "U+20BA"
+},
+{
+"name": "plus",
+"unicode": "U+002B"
+},
+{
+"name": "plusminus",
+"unicode": "U+00B1"
+},
+{
+"name": "multiply",
+"unicode": "U+00D7"
+},
+{
+"name": "divide",
+"unicode": "U+00F7"
+},
+{
+"name": "equal",
+"unicode": "U+003D"
+},
+{
+"name": "notequal",
+"unicode": "U+2260"
+},
+{
+"name": "less",
+"unicode": "U+003C"
+},
+{
+"name": "greater",
+"unicode": "U+003E"
+},
+{
+"name": "lessequal",
+"unicode": "U+2264"
+},
+{
+"name": "greaterequal",
+"unicode": "U+2265"
+},
+{
+"name": "logicalnot",
+"unicode": "U+00AC"
+},
+{
+"name": "asciitilde",
+"unicode": "U+007E"
+},
+{
+"name": "approxequal",
+"unicode": "U+2248"
+},
+{
+"name": "asciicircum",
+"unicode": "U+005E"
+},
+{
+"name": "infinity",
+"unicode": "U+221E"
+},
+{
+"name": "uni2206",
+"unicode": "U+2206"
+},
+{
+"name": "uni2211",
+"unicode": "U+2211"
+},
+{
+"name": "radical",
+"unicode": "U+221A"
+},
+{
+"name": "lozenge",
+"unicode": "U+25CA"
+},
+{
+"name": "uni220F",
+"unicode": "U+220F"
+},
+{
+"name": "pi",
+"unicode": "U+03C0"
+},
+{
+"name": "uni03A9",
+"unicode": "U+03A9"
+},
+{
+"name": "partialdiff",
+"unicode": "U+2202"
+},
+{
+"name": "integral",
+"unicode": "U+222B"
+},
+{
+"name": "mu",
+"unicode": "U+00B5"
+},
+{
+"name": "arrowright",
+"unicode": "U+2192"
+},
+{
+"name": "arrowleft",
+"unicode": "U+2190"
+},
+{
+"name": "arrowup",
+"unicode": "U+2191"
+},
+{
+"name": "arrowdown",
+"unicode": "U+2193"
+},
+{
+"name": "AE",
+"unicode": "U+00C6"
+},
+{
+"name": "ae",
+"unicode": "U+00E6"
+},
+{
+"name": "OE",
+"unicode": "U+0152"
+},
+{
+"name": "oe",
+"unicode": "U+0153"
+},
+{
+"name": "germandbls",
+"unicode": "U+00DF"
+},
+{
+"name": "uni1E9E",
+"unicode": "U+1E9E"
+},
+{
+"name": "Thorn",
+"unicode": "U+00DE"
+},
+{
+"name": "thorn",
+"unicode": "U+00FE"
+},
+{
+"name": "Eth",
+"unicode": "U+00D0"
+},
+{
+"name": "Dcroat",
+"unicode": "U+0110"
+},
+{
+"name": "eth",
+"unicode": "U+00F0"
+},
+{
+"name": "dcroat",
+"unicode": "U+0111"
+},
+{
+"name": "Oslash",
+"unicode": "U+00D8"
+},
+{
+"name": "oslash",
+"unicode": "U+00F8"
+},
+{
+"name": "Hbar",
+"unicode": "U+0126"
+},
+{
+"name": "hbar",
+"unicode": "U+0127"
+},
+{
+"name": "Lslash",
+"unicode": "U+0141"
+},
+{
+"name": "lslash",
+"unicode": "U+0142"
+},
+{
+"name": "Tbar",
+"unicode": "U+0166"
+},
+{
+"name": "tbar",
+"unicode": "U+0167"
+},
+{
+"name": "Eng",
+"unicode": "U+014A"
+},
+{
+"name": "eng",
+"unicode": "U+014B"
+},
+{
+"name": "kgreenlandic",
+"unicode": "U+0138"
+},
+{
+"name": "napostrophe",
+"unicode": "U+0149"
+},
+{
+"name": "Ldot",
+"unicode": "U+013F"
+},
+{
+"name": "ldot",
+"unicode": "U+0140"
+},
+{
+"name": "IJ",
+"unicode": "U+0132"
+},
+{
+"name": "ij",
+"unicode": "U+0133"
+},
+{
+"name": "longs",
+"unicode": "U+017F"
+},
+{
+"name": "f_i",
+"unicode": null
+},
+{
+"name": "f_l",
+"unicode": null
+},
+{
+"name": "f_f",
+"unicode": null
+},
+{
+"name": "f_f_i",
+"unicode": null
+},
+{
+"name": "f_f_l",
+"unicode": null
+},
+{
+"name": "zero.tf",
+"unicode": null
+},
+{
+"name": "zero.numr",
+"unicode": null
+},
+{
+"name": "zero.dnom",
+"unicode": null
+},
+{
+"name": "one.tf",
+"unicode": null
+},
+{
+"name": "one.numr",
+"unicode": null
+},
+{
+"name": "one.dnom",
+"unicode": null
+},
+{
+"name": "two.tf",
+"unicode": null
+},
+{
+"name": "two.numr",
+"unicode": null
+},
+{
+"name": "two.dnom",
+"unicode": null
+},
+{
+"name": "three.tf",
+"unicode": null
+},
+{
+"name": "three.numr",
+"unicode": null
+},
+{
+"name": "three.dnom",
+"unicode": null
+},
+{
+"name": "four.tf",
+"unicode": null
+},
+{
+"name": "four.numr",
+"unicode": null
+},
+{
+"name": "four.dnom",
+"unicode": null
+},
+{
+"name": "five.tf",
+"unicode": null
+},
+{
+"name": "five.numr",
+"unicode": null
+},
+{
+"name": "five.dnom",
+"unicode": null
+},
+{
+"name": "six.tf",
+"unicode": null
+},
+{
+"name": "six.numr",
+"unicode": null
+},
+{
+"name": "six.dnom",
+"unicode": null
+},
+{
+"name": "seven.tf",
+"unicode": null
+},
+{
+"name": "seven.numr",
+"unicode": null
+},
+{
+"name": "seven.dnom",
+"unicode": null
+},
+{
+"name": "eight.tf",
+"unicode": null
+},
+{
+"name": "eight.numr",
+"unicode": null
+},
+{
+"name": "eight.dnom",
+"unicode": null
+},
+{
+"name": "nine.tf",
+"unicode": null
+},
+{
+"name": "nine.numr",
+"unicode": null
+},
+{
+"name": "nine.dnom",
+"unicode": null
+},
+{
+"name": "zerosuperior",
+"unicode": "U+2070"
+},
+{
+"name": "zeroinferior",
+"unicode": "U+2080"
+},
+{
+"name": "onesuperior",
+"unicode": "U+00B9"
+},
+{
+"name": "oneinferior",
+"unicode": "U+2081"
+},
+{
+"name": "twosuperior",
+"unicode": "U+00B2"
+},
+{
+"name": "twoinferior",
+"unicode": "U+2082"
+},
+{
+"name": "threesuperior",
+"unicode": "U+00B3"
+},
+{
+"name": "threeinferior",
+"unicode": "U+2083"
+},
+{
+"name": "foursuperior",
+"unicode": "U+2074"
+},
+{
+"name": "fourinferior",
+"unicode": "U+2084"
+},
+{
+"name": "fivesuperior",
+"unicode": "U+2075"
+},
+{
+"name": "fiveinferior",
+"unicode": "U+2085"
+},
+{
+"name": "sixsuperior",
+"unicode": "U+2076"
+},
+{
+"name": "sixinferior",
+"unicode": "U+2086"
+},
+{
+"name": "sevensuperior",
+"unicode": "U+2077"
+},
+{
+"name": "seveninferior",
+"unicode": "U+2087"
+},
+{
+"name": "eightsuperior",
+"unicode": "U+2078"
+},
+{
+"name": "eightinferior",
+"unicode": "U+2088"
+},
+{
+"name": "ninesuperior",
+"unicode": "U+2079"
+},
+{
+"name": "nineinferior",
+"unicode": "U+2089"
+},
+{
+"name": "onequarter",
+"unicode": "U+00BC"
+},
+{
+"name": "onehalf",
+"unicode": "U+00BD"
+},
+{
+"name": "threequarters",
+"unicode": "U+00BE"
+},
+{
+"name": "zero.zero",
+"unicode": null
+},
+{
+"name": "zero.tf.zero",
+"unicode": null
+},
+{
+"name": "hyphen.case",
+"unicode": null
+},
+{
+"name": "endash.case",
+"unicode": null
+},
+{
+"name": "emdash.case",
+"unicode": null
+},
+{
+"name": "parenleft.case",
+"unicode": null
+},
+{
+"name": "parenright.case",
+"unicode": null
+},
+{
+"name": "bracketleft.case",
+"unicode": null
+},
+{
+"name": "bracketright.case",
+"unicode": null
+},
+{
+"name": "braceleft.case",
+"unicode": null
+},
+{
+"name": "braceright.case",
+"unicode": null
+},
+{
+"name": "guillemotleft.case",
+"unicode": null
+},
+{
+"name": "guillemotright.case",
+"unicode": null
+},
+{
+"name": "guilsinglleft.case",
+"unicode": null
+},
+{
+"name": "guilsinglright.case",
+"unicode": null
+},
+{
+"name": "periodcentered.case",
+"unicode": null
+},
+{
+"name": "bullet.case",
+"unicode": null
+},
+{
+"name": "exclamdown.case",
+"unicode": null
+},
+{
+"name": "questiondown.case",
+"unicode": null
+},
+{
+"name": "acutecomb",
+"unicode": "U+0301"
+},
+{
+"name": "acutecomb.case",
+"unicode": null
+},
+{
+"name": "gravecomb",
+"unicode": "U+0300"
+},
+{
+"name": "gravecomb.case",
+"unicode": null
+},
+{
+"name": "circumflexcomb",
+"unicode": "U+0302"
+},
+{
+"name": "circumflexcomb.case",
+"unicode": null
+},
+{
+"name": "caroncomb",
+"unicode": "U+030C"
+},
+{
+"name": "caroncomb.case",
+"unicode": null
+},
+{
+"name": "caroncomb.alt",
+"unicode": null
+},
+{
+"name": "tildecomb",
+"unicode": "U+0303"
+},
+{
+"name": "tildecomb.case",
+"unicode": null
+},
+{
+"name": "macroncomb",
+"unicode": "U+0304"
+},
+{
+"name": "macroncomb.case",
+"unicode": null
+},
+{
+"name": "brevecomb",
+"unicode": "U+0306"
+},
+{
+"name": "brevecomb.case",
+"unicode": null
+},
+{
+"name": "dotaccentcomb",
+"unicode": "U+0307"
+},
+{
+"name": "dotaccentcomb.case",
+"unicode": null
+},
+{
+"name": "dieresiscomb",
+"unicode": "U+0308"
+},
+{
+"name": "dieresiscomb.case",
+"unicode": null
+},
+{
+"name": "ringcomb",
+"unicode": "U+030A"
+},
+{
+"name": "ringcomb.case",
+"unicode": null
+},
+{
+"name": "hungarumlautcomb",
+"unicode": "U+030B"
+},
+{
+"name": "hungarumlautcomb.case",
+"unicode": null
+},
+{
+"name": "uni0312",
+"unicode": "U+0312"
+},
+{
+"name": "circumflexcomb.i",
+"unicode": null
+},
+{
+"name": "tildecomb.i",
+"unicode": null
+},
+{
+"name": "macroncomb.i",
+"unicode": null
+},
+{
+"name": "brevecomb.i",
+"unicode": null
+},
+{
+"name": "dieresiscomb.i",
+"unicode": null
+},
+{
+"name": "cedillacomb",
+"unicode": "U+0327"
+},
+{
+"name": "ogonekcomb",
+"unicode": "U+0328"
+},
+{
+"name": "dotbelowcomb",
+"unicode": "U+0323"
+},
+{
+"name": "uni0326",
+"unicode": "U+0326"
+},
+{
+"name": "Agrave",
+"unicode": "U+00C0"
+},
+{
+"name": "Aacute",
+"unicode": "U+00C1"
+},
+{
+"name": "Acircumflex",
+"unicode": "U+00C2"
+},
+{
+"name": "Atilde",
+"unicode": "U+00C3"
+},
+{
+"name": "Adieresis",
+"unicode": "U+00C4"
+},
+{
+"name": "Aring",
+"unicode": "U+00C5"
+},
+{
+"name": "Ccedilla",
+"unicode": "U+00C7"
+},
+{
+"name": "Egrave",
+"unicode": "U+00C8"
+},
+{
+"name": "Eacute",
+"unicode": "U+00C9"
+},
+{
+"name": "Ecircumflex",
+"unicode": "U+00CA"
+},
+{
+"name": "Edieresis",
+"unicode": "U+00CB"
+},
+{
+"name": "Igrave",
+"unicode": "U+00CC"
+},
+{
+"name": "Iacute",
+"unicode": "U+00CD"
+},
+{
+"name": "Icircumflex",
+"unicode": "U+00CE"
+},
+{
+"name": "Idieresis",
+"unicode": "U+00CF"
+},
+{
+"name": "Ntilde",
+"unicode": "U+00D1"
+},
+{
+"name": "Ograve",
+"unicode": "U+00D2"
+},
+{
+"name": "Oacute",
+"unicode": "U+00D3"
+},
+{
+"name": "Ocircumflex",
+"unicode": "U+00D4"
+},
+{
+"name": "Otilde",
+"unicode": "U+00D5"
+},
+{
+"name": "Odieresis",
+"unicode": "U+00D6"
+},
+{
+"name": "Ugrave",
+"unicode": "U+00D9"
+},
+{
+"name": "Uacute",
+"unicode": "U+00DA"
+},
+{
+"name": "Ucircumflex",
+"unicode": "U+00DB"
+},
+{
+"name": "Udieresis",
+"unicode": "U+00DC"
+},
+{
+"name": "Yacute",
+"unicode": "U+00DD"
+},
+{
+"name": "agrave",
+"unicode": "U+00E0"
+},
+{
+"name": "aacute",
+"unicode": "U+00E1"
+},
+{
+"name": "acircumflex",
+"unicode": "U+00E2"
+},
+{
+"name": "atilde",
+"unicode": "U+00E3"
+},
+{
+"name": "adieresis",
+"unicode": "U+00E4"
+},
+{
+"name": "aring",
+"unicode": "U+00E5"
+},
+{
+"name": "ccedilla",
+"unicode": "U+00E7"
+},
+{
+"name": "egrave",
+"unicode": "U+00E8"
+},
+{
+"name": "eacute",
+"unicode": "U+00E9"
+},
+{
+"name": "ecircumflex",
+"unicode": "U+00EA"
+},
+{
+"name": "edieresis",
+"unicode": "U+00EB"
+},
+{
+"name": "igrave",
+"unicode": "U+00EC"
+},
+{
+"name": "iacute",
+"unicode": "U+00ED"
+},
+{
+"name": "icircumflex",
+"unicode": "U+00EE"
+},
+{
+"name": "idieresis",
+"unicode": "U+00EF"
+},
+{
+"name": "ntilde",
+"unicode": "U+00F1"
+},
+{
+"name": "ograve",
+"unicode": "U+00F2"
+},
+{
+"name": "oacute",
+"unicode": "U+00F3"
+},
+{
+"name": "ocircumflex",
+"unicode": "U+00F4"
+},
+{
+"name": "otilde",
+"unicode": "U+00F5"
+},
+{
+"name": "odieresis",
+"unicode": "U+00F6"
+},
+{
+"name": "ugrave",
+"unicode": "U+00F9"
+},
+{
+"name": "uacute",
+"unicode": "U+00FA"
+},
+{
+"name": "ucircumflex",
+"unicode": "U+00FB"
+},
+{
+"name": "udieresis",
+"unicode": "U+00FC"
+},
+{
+"name": "yacute",
+"unicode": "U+00FD"
+},
+{
+"name": "ydieresis",
+"unicode": "U+00FF"
+},
+{
+"name": "Amacron",
+"unicode": "U+0100"
+},
+{
+"name": "amacron",
+"unicode": "U+0101"
+},
+{
+"name": "Abreve",
+"unicode": "U+0102"
+},
+{
+"name": "abreve",
+"unicode": "U+0103"
+},
+{
+"name": "Aogonek",
+"unicode": "U+0104"
+},
+{
+"name": "aogonek",
+"unicode": "U+0105"
+},
+{
+"name": "Cacute",
+"unicode": "U+0106"
+},
+{
+"name": "cacute",
+"unicode": "U+0107"
+},
+{
+"name": "Ccircumflex",
+"unicode": "U+0108"
+},
+{
+"name": "ccircumflex",
+"unicode": "U+0109"
+},
+{
+"name": "Cdotaccent",
+"unicode": "U+010A"
+},
+{
+"name": "cdotaccent",
+"unicode": "U+010B"
+},
+{
+"name": "Ccaron",
+"unicode": "U+010C"
+},
+{
+"name": "ccaron",
+"unicode": "U+010D"
+},
+{
+"name": "Dcaron",
+"unicode": "U+010E"
+},
+{
+"name": "dcaron",
+"unicode": "U+010F"
+},
+{
+"name": "Emacron",
+"unicode": "U+0112"
+},
+{
+"name": "emacron",
+"unicode": "U+0113"
+},
+{
+"name": "Ebreve",
+"unicode": "U+0114"
+},
+{
+"name": "ebreve",
+"unicode": "U+0115"
+},
+{
+"name": "Edotaccent",
+"unicode": "U+0116"
+},
+{
+"name": "edotaccent",
+"unicode": "U+0117"
+},
+{
+"name": "Eogonek",
+"unicode": "U+0118"
+},
+{
+"name": "eogonek",
+"unicode": "U+0119"
+},
+{
+"name": "Ecaron",
+"unicode": "U+011A"
+},
+{
+"name": "ecaron",
+"unicode": "U+011B"
+},
+{
+"name": "Gcircumflex",
+"unicode": "U+011C"
+},
+{
+"name": "gcircumflex",
+"unicode": "U+011D"
+},
+{
+"name": "Gbreve",
+"unicode": "U+011E"
+},
+{
+"name": "gbreve",
+"unicode": "U+011F"
+},
+{
+"name": "Gdotaccent",
+"unicode": "U+0120"
+},
+{
+"name": "gdotaccent",
+"unicode": "U+0121"
+},
+{
+"name": "uni0122",
+"unicode": "U+0122"
+},
+{
+"name": "uni0123",
+"unicode": "U+0123"
+},
+{
+"name": "Hcircumflex",
+"unicode": "U+0124"
+},
+{
+"name": "hcircumflex",
+"unicode": "U+0125"
+},
+{
+"name": "Itilde",
+"unicode": "U+0128"
+},
+{
+"name": "itilde",
+"unicode": "U+0129"
+},
+{
+"name": "Imacron",
+"unicode": "U+012A"
+},
+{
+"name": "imacron",
+"unicode": "U+012B"
+},
+{
+"name": "Ibreve",
+"unicode": "U+012C"
+},
+{
+"name": "ibreve",
+"unicode": "U+012D"
+},
+{
+"name": "Iogonek",
+"unicode": "U+012E"
+},
+{
+"name": "iogonek",
+"unicode": "U+012F"
+},
+{
+"name": "Idotaccent",
+"unicode": "U+0130"
+},
+{
+"name": "Jcircumflex",
+"unicode": "U+0134"
+},
+{
+"name": "jcircumflex",
+"unicode": "U+0135"
+},
+{
+"name": "uni0136",
+"unicode": "U+0136"
+},
+{
+"name": "uni0137",
+"unicode": "U+0137"
+},
+{
+"name": "Lacute",
+"unicode": "U+0139"
+},
+{
+"name": "lacute",
+"unicode": "U+013A"
+},
+{
+"name": "uni013B",
+"unicode": "U+013B"
+},
+{
+"name": "uni013C",
+"unicode": "U+013C"
+},
+{
+"name": "Lcaron",
+"unicode": "U+013D"
+},
+{
+"name": "lcaron",
+"unicode": "U+013E"
+},
+{
+"name": "Nacute",
+"unicode": "U+0143"
+},
+{
+"name": "nacute",
+"unicode": "U+0144"
+},
+{
+"name": "uni0145",
+"unicode": "U+0145"
+},
+{
+"name": "uni0146",
+"unicode": "U+0146"
+},
+{
+"name": "Ncaron",
+"unicode": "U+0147"
+},
+{
+"name": "ncaron",
+"unicode": "U+0148"
+},
+{
+"name": "Omacron",
+"unicode": "U+014C"
+},
+{
+"name": "omacron",
+"unicode": "U+014D"
+},
+{
+"name": "Obreve",
+"unicode": "U+014E"
+},
+{
+"name": "obreve",
+"unicode": "U+014F"
+},
+{
+"name": "Ohungarumlaut",
+"unicode": "U+0150"
+},
+{
+"name": "ohungarumlaut",
+"unicode": "U+0151"
+},
+{
+"name": "Racute",
+"unicode": "U+0154"
+},
+{
+"name": "racute",
+"unicode": "U+0155"
+},
+{
+"name": "uni0156",
+"unicode": "U+0156"
+},
+{
+"name": "uni0157",
+"unicode": "U+0157"
+},
+{
+"name": "Rcaron",
+"unicode": "U+0158"
+},
+{
+"name": "rcaron",
+"unicode": "U+0159"
+},
+{
+"name": "Sacute",
+"unicode": "U+015A"
+},
+{
+"name": "sacute",
+"unicode": "U+015B"
+},
+{
+"name": "Scircumflex",
+"unicode": "U+015C"
+},
+{
+"name": "scircumflex",
+"unicode": "U+015D"
+},
+{
+"name": "Scedilla",
+"unicode": "U+015E"
+},
+{
+"name": "scedilla",
+"unicode": "U+015F"
+},
+{
+"name": "Scaron",
+"unicode": "U+0160"
+},
+{
+"name": "scaron",
+"unicode": "U+0161"
+},
+{
+"name": "uni0162",
+"unicode": "U+0162"
+},
+{
+"name": "uni0163",
+"unicode": "U+0163"
+},
+{
+"name": "Tcaron",
+"unicode": "U+0164"
+},
+{
+"name": "tcaron",
+"unicode": "U+0165"
+},
+{
+"name": "Utilde",
+"unicode": "U+0168"
+},
+{
+"name": "utilde",
+"unicode": "U+0169"
+},
+{
+"name": "Umacron",
+"unicode": "U+016A"
+},
+{
+"name": "umacron",
+"unicode": "U+016B"
+},
+{
+"name": "Ubreve",
+"unicode": "U+016C"
+},
+{
+"name": "ubreve",
+"unicode": "U+016D"
+},
+{
+"name": "Uring",
+"unicode": "U+016E"
+},
+{
+"name": "uring",
+"unicode": "U+016F"
+},
+{
+"name": "Uhungarumlaut",
+"unicode": "U+0170"
+},
+{
+"name": "uhungarumlaut",
+"unicode": "U+0171"
+},
+{
+"name": "Uogonek",
+"unicode": "U+0172"
+},
+{
+"name": "uogonek",
+"unicode": "U+0173"
+},
+{
+"name": "Wcircumflex",
+"unicode": "U+0174"
+},
+{
+"name": "wcircumflex",
+"unicode": "U+0175"
+},
+{
+"name": "Ycircumflex",
+"unicode": "U+0176"
+},
+{
+"name": "ycircumflex",
+"unicode": "U+0177"
+},
+{
+"name": "Ydieresis",
+"unicode": "U+0178"
+},
+{
+"name": "Zacute",
+"unicode": "U+0179"
+},
+{
+"name": "zacute",
+"unicode": "U+017A"
+},
+{
+"name": "Zdotaccent",
+"unicode": "U+017B"
+},
+{
+"name": "zdotaccent",
+"unicode": "U+017C"
+},
+{
+"name": "Zcaron",
+"unicode": "U+017D"
+},
+{
+"name": "zcaron",
+"unicode": "U+017E"
+},
+{
+"name": "uni0218",
+"unicode": "U+0218"
+},
+{
+"name": "uni0219",
+"unicode": "U+0219"
+},
+{
+"name": "uni021A",
+"unicode": "U+021A"
+},
+{
+"name": "uni021B",
+"unicode": "U+021B"
+},
+{
+"name": "uni1E02",
+"unicode": "U+1E02"
+},
+{
+"name": "uni1E03",
+"unicode": "U+1E03"
+},
+{
+"name": "uni1E0A",
+"unicode": "U+1E0A"
+},
+{
+"name": "uni1E0B",
+"unicode": "U+1E0B"
+},
+{
+"name": "uni1E1E",
+"unicode": "U+1E1E"
+},
+{
+"name": "uni1E1F",
+"unicode": "U+1E1F"
+},
+{
+"name": "uni1E40",
+"unicode": "U+1E40"
+},
+{
+"name": "uni1E41",
+"unicode": "U+1E41"
+},
+{
+"name": "uni1E56",
+"unicode": "U+1E56"
+},
+{
+"name": "uni1E57",
+"unicode": "U+1E57"
+},
+{
+"name": "uni1E60",
+"unicode": "U+1E60"
+},
+{
+"name": "uni1E61",
+"unicode": "U+1E61"
+},
+{
+"name": "uni1E6A",
+"unicode": "U+1E6A"
+},
+{
+"name": "uni1E6B",
+"unicode": "U+1E6B"
+},
+{
+"name": "Wgrave",
+"unicode": "U+1E80"
+},
+{
+"name": "wgrave",
+"unicode": "U+1E81"
+},
+{
+"name": "Wacute",
+"unicode": "U+1E82"
+},
+{
+"name": "wacute",
+"unicode": "U+1E83"
+},
+{
+"name": "Wdieresis",
+"unicode": "U+1E84"
+},
+{
+"name": "wdieresis",
+"unicode": "U+1E85"
+},
+{
+"name": "Ygrave",
+"unicode": "U+1EF2"
+},
+{
+"name": "ygrave",
+"unicode": "U+1EF3"
+},
+{
+"name": "uni1E8E",
+"unicode": "U+1E8E"
+},
+{
+"name": "uni1E8F",
+"unicode": "U+1E8F"
+},
+{
+"name": "uni1EBC",
+"unicode": "U+1EBC"
+},
+{
+"name": "uni1EBD",
+"unicode": "U+1EBD"
+},
+{
+"name": "uni1EF8",
+"unicode": "U+1EF8"
+},
+{
+"name": "uni1EF9",
+"unicode": "U+1EF9"
+},
+{
+"name": "uni1E04",
+"unicode": "U+1E04"
+},
+{
+"name": "uni1E05",
+"unicode": "U+1E05"
+},
+{
+"name": "uni1E0C",
+"unicode": "U+1E0C"
+},
+{
+"name": "uni1E0D",
+"unicode": "U+1E0D"
+},
+{
+"name": "uni1E24",
+"unicode": "U+1E24"
+},
+{
+"name": "uni1E25",
+"unicode": "U+1E25"
+},
+{
+"name": "uni1E32",
+"unicode": "U+1E32"
+},
+{
+"name": "uni1E33",
+"unicode": "U+1E33"
+},
+{
+"name": "uni1E36",
+"unicode": "U+1E36"
+},
+{
+"name": "uni1E37",
+"unicode": "U+1E37"
+},
+{
+"name": "uni1E42",
+"unicode": "U+1E42"
+},
+{
+"name": "uni1E43",
+"unicode": "U+1E43"
+},
+{
+"name": "uni1E44",
+"unicode": "U+1E44"
+},
+{
+"name": "uni1E45",
+"unicode": "U+1E45"
+},
+{
+"name": "uni1E46",
+"unicode": "U+1E46"
+},
+{
+"name": "uni1E47",
+"unicode": "U+1E47"
+},
+{
+"name": "uni1E5A",
+"unicode": "U+1E5A"
+},
+{
+"name": "uni1E5B",
+"unicode": "U+1E5B"
+},
+{
+"name": "uni1E62",
+"unicode": "U+1E62"
+},
+{
+"name": "uni1E63",
+"unicode": "U+1E63"
+},
+{
+"name": "uni1E6C",
+"unicode": "U+1E6C"
+},
+{
+"name": "uni1E6D",
+"unicode": "U+1E6D"
+},
+{
+"name": "uni1E92",
+"unicode": "U+1E92"
+},
+{
+"name": "uni1E93",
+"unicode": "U+1E93"
+},
+{
+"name": "uni1EA0",
+"unicode": "U+1EA0"
+},
+{
+"name": "uni1EA1",
+"unicode": "U+1EA1"
+},
+{
+"name": "uni1EB8",
+"unicode": "U+1EB8"
+},
+{
+"name": "uni1EB9",
+"unicode": "U+1EB9"
+},
+{
+"name": "uni1ECA",
+"unicode": "U+1ECA"
+},
+{
+"name": "uni1ECB",
+"unicode": "U+1ECB"
+},
+{
+"name": "uni1ECC",
+"unicode": "U+1ECC"
+},
+{
+"name": "uni1ECD",
+"unicode": "U+1ECD"
+},
+{
+"name": "uni1EE4",
+"unicode": "U+1EE4"
+},
+{
+"name": "uni1EE5",
+"unicode": "U+1EE5"
+},
+{
+"name": "uni1EF4",
+"unicode": "U+1EF4"
+},
+{
+"name": "uni1EF5",
+"unicode": "U+1EF5"
+},
+{
+"name": "grave",
+"unicode": "U+0060"
+},
+{
+"name": "acute",
+"unicode": "U+00B4"
+},
+{
+"name": "circumflex",
+"unicode": "U+02C6"
+},
+{
+"name": "tilde",
+"unicode": "U+02DC"
+},
+{
+"name": "macron",
+"unicode": "U+00AF"
+},
+{
+"name": "breve",
+"unicode": "U+02D8"
+},
+{
+"name": "dotaccent",
+"unicode": "U+02D9"
+},
+{
+"name": "dieresis",
+"unicode": "U+00A8"
+},
+{
+"name": "ring",
+"unicode": "U+02DA"
+},
+{
+"name": "cedilla",
+"unicode": "U+00B8"
+},
+{
+"name": "ogonek",
+"unicode": "U+02DB"
+},
+{
+"name": "caron",
+"unicode": "U+02C7"
+},
+{
+"name": "hungarumlaut",
+"unicode": "U+02DD"
+}
+]
+}

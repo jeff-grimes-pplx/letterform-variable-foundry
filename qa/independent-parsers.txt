@@ -1,0 +1,60 @@
+# Independent parser / sanitizer receipts
+
+## OpenType Sanitizer (ots-sanitize, python -m ots <file>)
+ots-python 9.2.0
+OK   fonts/Apertide[wdth,wght].ttf — File sanitized successfully!
+OK   fonts/Apertide[wdth,wght].woff2 — File sanitized successfully!
+OK   fonts/static/Apertide-Bold.ttf — File sanitized successfully!
+OK   fonts/static/Apertide-CondensedBold.ttf — File sanitized successfully!
+OK   fonts/static/Apertide-CondensedExtraBold.ttf — File sanitized successfully!
+OK   fonts/static/Apertide-CondensedExtraLight.ttf — File sanitized successfully!
+OK   fonts/static/Apertide-CondensedRegular.ttf — File sanitized successfully!
+OK   fonts/static/Apertide-ExtendedBold.ttf — File sanitized successfully!
+OK   fonts/static/Apertide-ExtendedExtraBold.ttf — File sanitized successfully!
+OK   fonts/static/Apertide-ExtendedExtraLight.ttf — File sanitized successfully!
+OK   fonts/static/Apertide-ExtendedRegular.ttf — File sanitized successfully!
+OK   fonts/static/Apertide-ExtraBold.ttf — File sanitized successfully!
+OK   fonts/static/Apertide-ExtraLight.ttf — File sanitized successfully!
+OK   fonts/static/Apertide-Light.ttf — File sanitized successfully!
+OK   fonts/static/Apertide-Medium.ttf — File sanitized successfully!
+OK   fonts/static/Apertide-Regular.ttf — File sanitized successfully!
+OK   fonts/static/Apertide-SemiBold.ttf — File sanitized successfully!
+all sanitized: True
+
+## fontTools TTFont (compiled binary re-opened from disk)
+glyphs: 548 encoded: 477
+fvar axes: [('wght', 200.0, 400.0, 800.0), ('wdth', 75.0, 100.0, 125.0)]
+fvar instances: ['ExtraLight', 'Light', 'Regular', 'Medium', 'SemiBold', 'Bold', 'ExtraBold', 'Condensed ExtraLight', 'Condensed Regular', 'Condensed Bold', 'Condensed ExtraBold', 'Extended ExtraLight', 'Extended Regular', 'Extended Bold', 'Extended ExtraBold']
+STAT axis values: [('ExtraLight', 0, 200.0), ('Light', 0, 300.0), ('Regular', 0, 400.0), ('Medium', 0, 500.0), ('SemiBold', 0, 600.0), ('Bold', 0, 700.0), ('ExtraBold', 0, 800.0), ('Condensed', 1, 75.0), ('Normal', 1, 100.0), ('Extended', 1, 125.0)]
+tables: ['GDEF', 'GPOS', 'GSUB', 'GlyphOrder', 'HVAR', 'MVAR', 'OS/2', 'STAT', 'avar', 'cmap', 'fvar', 'gasp', 'glyf', 'gvar', 'head', 'hhea', 'hmtx', 'loca', 'maxp', 'name', 'post', 'prep']
+GSUB features: ['case', 'ccmp', 'dnom', 'frac', 'liga', 'numr', 'ordn', 'pnum', 'subs', 'sups', 'tnum', 'zero']
+GPOS features: ['kern', 'mark']
+name 1/2/4/6: ['Apertide', 'Regular', 'Apertide Regular', 'Apertide-Regular']
+OS/2 fsType: 0 usWeightClass: 400 usWidthClass: 5 typo asc/desc/gap: 940 -260 0 win: 1000 400 hhea: 940 -260
+woff2 flavor: woff2 glyphs: 548
+static Apertide-Bold.ttf glyphs 548 encoded 477 wght 700 wdth 5 nameID2 Bold nameID17 Bold
+static Apertide-CondensedBold.ttf glyphs 548 encoded 477 wght 700 wdth 3 nameID2 Regular nameID17 Condensed Bold
+static Apertide-CondensedExtraBold.ttf glyphs 548 encoded 477 wght 800 wdth 3 nameID2 Regular nameID17 Condensed ExtraBold
+static Apertide-CondensedExtraLight.ttf glyphs 548 encoded 477 wght 200 wdth 3 nameID2 Regular nameID17 Condensed ExtraLight
+static Apertide-CondensedRegular.ttf glyphs 548 encoded 477 wght 400 wdth 3 nameID2 Regular nameID17 Condensed Regular
+static Apertide-ExtendedBold.ttf glyphs 548 encoded 477 wght 700 wdth 7 nameID2 Regular nameID17 Extended Bold
+static Apertide-ExtendedExtraBold.ttf glyphs 548 encoded 477 wght 800 wdth 7 nameID2 Regular nameID17 Extended ExtraBold
+static Apertide-ExtendedExtraLight.ttf glyphs 548 encoded 477 wght 200 wdth 7 nameID2 Regular nameID17 Extended ExtraLight
+static Apertide-ExtendedRegular.ttf glyphs 548 encoded 477 wght 400 wdth 7 nameID2 Regular nameID17 Extended Regular
+static Apertide-ExtraBold.ttf glyphs 548 encoded 477 wght 800 wdth 5 nameID2 Regular nameID17 ExtraBold
+static Apertide-ExtraLight.ttf glyphs 548 encoded 477 wght 200 wdth 5 nameID2 Regular nameID17 ExtraLight
+static Apertide-Light.ttf glyphs 548 encoded 477 wght 300 wdth 5 nameID2 Regular nameID17 Light
+static Apertide-Medium.ttf glyphs 548 encoded 477 wght 500 wdth 5 nameID2 Regular nameID17 Medium
+static Apertide-Regular.ttf glyphs 548 encoded 477 wght 400 wdth 5 nameID2 Regular nameID17 Regular
+static Apertide-SemiBold.ttf glyphs 548 encoded 477 wght 600 wdth 5 nameID2 Regular nameID17 SemiBold
+
+## FontForge (independent editor, scripting API)
+VF fontname Apertide-Regular glyphs 548 em 1000 gsub lookups 19 gpos lookups 5
+static Regular glyphs 548 open-contour/intersecting glyphs: []
+FontForge stderr (deduplicated): {'The following table(s) in the font have been ignored by FontForge': 1, "  Ignoring 'HVAR' horizontal metrics variations table": 1, "  Ignoring 'MVAR' metrics variations table": 1, "  Ignoring 'STAT' style attributes table": 1, "Hmm, this 'fvar' table has an unexpected size for an instance, I shan't parse it": 1, 'Bad device table': 1222}
+note: FontForge 20230101 ignores HVAR/MVAR/STAT and reports variable-font VariationIndex device tables as "Bad device table"; this is a known FontForge limitation with OpenType Variations, not a font defect (OTS and fontTools parse the same tables cleanly).
+
+## HarfBuzz (hb-shape) — see shaping-receipts.txt (68 receipts)
+hb-shape (HarfBuzz) 12.3.2
+
+glyph manifest written: qa/glyph-manifest.json

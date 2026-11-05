@@ -1,0 +1,19 @@
+/home/user/.local/lib/python3.14/site-packages/fontbakery/fonts_profile.py:103: UserWarning: Failed to load fontbakery.checks.vendorspecific.googlefonts.glyphsets.shape_languages: No module named 'shaperglot'
+  warnings.warn("Failed to load %s: %s" % (import_path, e))
+Start ... running 1722 individual check executions.
+Apertide-Bold.ttf: contour_count: WARN [contour-count]
+Apertide-CondensedBold.ttf: contour_count: WARN [contour-count]
+Apertide-CondensedExtraBold.ttf: contour_count: WARN [contour-count]
+Apertide-CondensedRegular.ttf: contour_count: WARN [contour-count]
+Apertide-ExtendedBold.ttf: contour_count: WARN [contour-count]
+Apertide-ExtendedExtraBold.ttf: contour_count: WARN [contour-count]
+Apertide-ExtendedRegular.ttf: contour_count: WARN [contour-count]
+Apertide-ExtraBold.ttf: contour_count: WARN [contour-count]
+Apertide-Light.ttf: contour_count: WARN [contour-count]
+Apertide-Medium.ttf: contour_count: WARN [contour-count]
+Apertide-Regular.ttf: contour_count: WARN [contour-count]
+Apertide-SemiBold.ttf: contour_count: WARN [contour-count]
+
+ ERROR: 0 FATAL: 0 FAIL: 0 WARN: 12 INFO: 45 SKIP: 566 PASS: 1099
+A report in html format has been saved to "qa/fontbakery-static.html"
+A report in JSON format has been saved to "qa/fontbakery-static.json"

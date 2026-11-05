@@ -1,0 +1,5 @@
+Start ... running 126 individual check executions.
+
+ ERROR: 0 FATAL: 0 FAIL: 0 WARN: 0 INFO: 3 SKIP: 19 PASS: 104
+A report in JSON format has been saved to "qa/fontbakery-vf.json"
+A report in html format has been saved to "qa/fontbakery-vf.html"

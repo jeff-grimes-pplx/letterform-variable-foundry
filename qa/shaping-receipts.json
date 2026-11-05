@@ -1,0 +1,512 @@
+{
+ "font": "Apertide[wdth,wght].ttf",
+ "hb_version": "hb-shape (HarfBuzz) 12.3.2",
+ "passed": 68,
+ "total": 68,
+ "receipts": [
+  {
+   "title": "liga default on: fi fl ff ffi ffl",
+   "text": "fi fl ff ffi ffl",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=fi fl ff ffi ffl",
+   "output": "[f_i=0+451|space=2+240|f_l=3+512|space=5+240|f_f=6+590|space=8+240|f_f_i=9+723|space=12+240|f_f_l=13+784]",
+   "pass": true
+  },
+  {
+   "title": "liga off (-liga): no ligature glyphs",
+   "text": "fi fl ff ffi ffl",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=fi fl ff ffi ffl --features=-liga",
+   "output": "[f=0+348|i=1+200|space=2+240|f=3+348|l=4+256|space=5+240|f=6+318|f=7+318|space=8+240|f=9+318|f=10+348|i=11+200|space=12+240|f=13+318|f=14+348|l=15+256]",
+   "pass": true
+  },
+  {
+   "title": "liga in words: office affinity -> two ffi ligatures",
+   "text": "office affinity",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=office affinity",
+   "output": "[o=0+556|f_f_i=1+723|c=4+508|e=5+523|space=6+240|a=7+518|f_f_i=8+723|n=11+536|i=12+200|t=13+344|y=14+499]",
+   "pass": true
+  },
+  {
+   "title": "Turkish language: no fi ligature (dotted i)",
+   "text": "fi",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=fi --language=tr",
+   "output": "[f=0+348|i=1+200]",
+   "pass": true
+  },
+  {
+   "title": "Turkish language: fl still ligates",
+   "text": "fl",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=fl --language=tr",
+   "output": "[f_l=0+512]",
+   "pass": true
+  },
+  {
+   "title": "kern on: AV tighter than default advance",
+   "text": "AV",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=AV",
+   "output": "[A=0+538|V=1+606]",
+   "pass": true
+  },
+  {
+   "title": "kern off (-kern): A keeps its default advance",
+   "text": "AV",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=AV --features=-kern",
+   "output": "[A=0+626|V=1+606]",
+   "pass": true
+  },
+  {
+   "title": "kern pairs: AVATAR WAVY To Ta Yo",
+   "text": "AVATAR WAVY To Ta Yo",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=AVATAR WAVY To Ta Yo",
+   "output": "[A=0+538|V=1+518|A=2+544|T=3+495|A=4+626|R=5+599|space=6+240|W=7+778|A=8+538|V=9+606|Y=10+581|space=11+240|T=12+481|o=13+556|space=14+240|T=15+479|a=16+518|space=17+240|Y=18+487|o=19+556]",
+   "pass": true
+  },
+  {
+   "title": "kern: quote pairs L’A",
+   "text": "L’A",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=L’A",
+   "output": "[L=0+380|quoteright=1+77|A=2+626]",
+   "pass": true
+  },
+  {
+   "title": "kern: r before round letters (rg ro ra) tighter than unkerned",
+   "text": "rg ro ra",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=rg ro ra",
+   "output": "[r=0+328|g=1+546|space=2+240|r=3+328|o=4+556|space=5+240|r=6+334|a=7+518]",
+   "pass": true
+  },
+  {
+   "title": "kern: F before lowercase (Fo Fa Fs) tighter than unkerned",
+   "text": "Fo Fa Fs",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Fo Fa Fs",
+   "output": "[F=0+444|o=1+556|space=2+240|F=3+440|a=4+518|space=5+240|F=6+448|s=7+478]",
+   "pass": true
+  },
+  {
+   "title": "kern at heavy condensed (wght 800, wdth 75): Apertide pairs r-t kerned",
+   "text": "Apertide",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Apertide --variations=wght=800,wdth=75",
+   "output": "[A=0+544|p=1+456|e=2+457|r=3+304|t=4+308|i=5+176|d=6+456|e=7+457]",
+   "pass": true
+  },
+  {
+   "title": "default figures are proportional (unequal widths)",
+   "text": "0123456789",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=0123456789",
+   "output": "[zero=0+567|one=1+364|two=2+537|three=3+537|four=4+572|five=5+542|six=6+562|seven=7+522|eight=8+562|nine=9+562]",
+   "pass": true
+  },
+  {
+   "title": "tnum: all figures share one width",
+   "text": "0123456789",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=0123456789 --features=tnum",
+   "output": "[zero.tf=0+572|one.tf=1+572|two.tf=2+572|three.tf=3+572|four.tf=4+572|five.tf=5+572|six.tf=6+572|seven.tf=7+572|eight.tf=8+572|nine.tf=9+572]",
+   "pass": true
+  },
+  {
+   "title": "pnum explicit: proportional glyphs",
+   "text": "0123456789",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=0123456789 --features=pnum",
+   "output": "[zero=0+567|one=1+364|two=2+537|three=3+537|four=4+572|five=5+542|six=6+562|seven=7+522|eight=8+562|nine=9+562]",
+   "pass": true
+  },
+  {
+   "title": "zero: slashed zero",
+   "text": "0",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=0 --features=zero",
+   "output": "[zero.zero=0+567]",
+   "pass": true
+  },
+  {
+   "title": "zero + tnum: tabular slashed zero",
+   "text": "10",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=10 --features=zero,tnum",
+   "output": "[one.tf=0+572|zero.tf.zero=1+572]",
+   "pass": true
+  },
+  {
+   "title": "frac: 1/2 3/4 7/8",
+   "text": "1/2 3/4 7/8",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=1/2 3/4 7/8 --features=frac",
+   "output": "[one.numr=0+208|fraction=1+240|two.dnom=2+316|space=3+240|three.numr=4+316|fraction=5+240|four.dnom=6+338|space=7+240|seven.numr=8+306|fraction=9+240|eight.dnom=10+331]",
+   "pass": true
+  },
+  {
+   "title": "frac: 3-digit numerator and denominator 125/1000",
+   "text": "125/1000",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=125/1000 --features=frac",
+   "output": "[one.numr=0+208|two.numr=1+316|five.numr=2+319|fraction=3+240|one.dnom=4+208|zero.dnom=5+334|zero.dnom=6+334|zero.dnom=7+334]",
+   "pass": true
+  },
+  {
+   "title": "frac off: plain figures and slash",
+   "text": "1/2",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=1/2",
+   "output": "[one=0+364|slash=1+350|two=2+537]",
+   "pass": true
+  },
+  {
+   "title": "frac: slash between letters stays a slash (a/b)",
+   "text": "a/b",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=a/b --features=frac",
+   "output": "[a=0+518|slash=1+350|b=2+546]",
+   "pass": true
+  },
+  {
+   "title": "frac: trailing slash without denominator unchanged (1/)",
+   "text": "1/",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=1/ --features=frac",
+   "output": "[one=0+364|slash=1+350]",
+   "pass": true
+  },
+  {
+   "title": "frac + tnum compose: 1/2 from tabular figures",
+   "text": "1/2",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=1/2 --features=tnum,frac",
+   "output": "[one.numr=0+208|fraction=1+240|two.dnom=2+316]",
+   "pass": true
+  },
+  {
+   "title": "frac: chained 12/34/56 shapes consistently",
+   "text": "12/34/56",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=12/34/56 --features=frac",
+   "output": "[one.numr=0+208|two.numr=1+316|fraction=2+240|three.dnom=3+316|four.dnom=4+338|fraction=5+240|five.dnom=6+319|six.dnom=7+331]",
+   "pass": true
+  },
+  {
+   "title": "sups + tnum compose",
+   "text": "12",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=12 --features=tnum,sups",
+   "output": "[onesuperior=0+208|twosuperior=1+316]",
+   "pass": true
+  },
+  {
+   "title": "ordn + tnum compose",
+   "text": "1a",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=1a --features=tnum,ordn",
+   "output": "[one.tf=0+572|ordfeminine=1+390]",
+   "pass": true
+  },
+  {
+   "title": "numr / dnom explicit",
+   "text": "12",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=12 --features=numr",
+   "output": "[one.numr=0+208|two.numr=1+316]",
+   "pass": true
+  },
+  {
+   "title": "sups: superior figures",
+   "text": "123",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=123 --features=sups",
+   "output": "[onesuperior=0+208|twosuperior=1+316|threesuperior=2+316]",
+   "pass": true
+  },
+  {
+   "title": "subs: inferior figures",
+   "text": "123",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=123 --features=subs",
+   "output": "[oneinferior=0+208|twoinferior=1+316|threeinferior=2+316]",
+   "pass": true
+  },
+  {
+   "title": "ordn: 1a 2o ordinals",
+   "text": "1a 2o",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=1a 2o --features=ordn",
+   "output": "[one=0+364|ordfeminine=1+390|space=2+240|two=3+537|ordmasculine=4+390]",
+   "pass": true
+  },
+  {
+   "title": "case: punctuation shifts to cap variants",
+   "text": "(H)-[A]¡¿",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=(H)-[A]¡¿ --features=case",
+   "output": "[parenleft.case=0+326|H=1+624|parenright.case=2+326|hyphen.case=3+380|bracketleft.case=4+330|A=5+626|bracketright.case=6+330|exclamdown.case=7+227|questiondown.case=8+518]",
+   "pass": true
+  },
+  {
+   "title": "case off: default punctuation",
+   "text": "(H)-",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=(H)-",
+   "output": "[parenleft=0+326|H=1+624|parenright=2+326|hyphen=3+380]",
+   "pass": true
+  },
+  {
+   "title": "mark: x + combining acute (no precomposed form) positions with zero advance and an offset",
+   "text": "x́",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=x́",
+   "output": "[x=0+474|acutecomb=0@-237,0+0]",
+   "pass": true
+  },
+  {
+   "title": "mark: B + combining grave uses the .case grave",
+   "text": "B̀",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=B̀",
+   "output": "[B=0+609|gravecomb.case=0@-297,0+0]",
+   "pass": true
+  },
+  {
+   "title": "mark: cap A + combining ring uses .case mark",
+   "text": "Å",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Å --features=ccmp",
+   "output": "[Aring=0+626]",
+   "pass": true
+  },
+  {
+   "title": "mark: O + combining ogonek attaches",
+   "text": "Ǫ",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Ǫ",
+   "output": "[O=0+654|ogonekcomb=0@-259,0+0]",
+   "pass": true
+  },
+  {
+   "title": "precomposed vs decomposed: é == e + ́ width",
+   "text": "é",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=é",
+   "output": "[eacute=0+523]",
+   "pass": true
+  },
+  {
+   "title": "coverage: English shapes without .notdef",
+   "text": "The quick brown fox jumps over the lazy dog.",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=The quick brown fox jumps over the lazy dog. --no-glyph-names",
+   "output": "[20=0+577|34=1+536|31=2+523|65=3+240|43=4+546|47=5+536|35=6+200|29=7+508|37=8+502|65=9+240|28=10+546|44=11+328|41=12+548|49=13+704|40=14+536|65=15+240|32=16+318|41=17+542|50=18+474|65=19+240|36=20+248|47=21+536|39=22+796|42=23+546|45=24+478|65=25+240|41=26+544|48=27+489|31=28+523|44=29+368|65=30+240|46=31+344|34=32+536|31=33+523|65=34+240|38=35+256|27=36+518|52=37+465|51=38+499|65=39+240|30=40+546|41=41+556|33=42+546|69=43+207]",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: French shapes without .notdef",
+   "text": "Voix ambiguë d’un cœur qui, au zéphyr, préfère les jattes de kiwis. À l’ombre du café. Ça va? Où? Noël, naïve, Æ, ÿ",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Voix ambiguë d’un cœur qui, au zéphyr, préfère les jattes de kiwis. À l’ombre du café. Ça va? Où? Noël, naïve, Æ, ÿ --no-glyph-names",
+   "output": "[22=0+544|41=1+556|35=2+200|50=3+474|65=4+240|27=5+518|39=6+796|28=7+546|35=8+200|33=9+546|47=10+536|342=11+523|65=12+240|30=13+546|82=14+187|47=15+536|40=16+536|65=17+240|29=18+508|170=19+907|47=20+536|44=21+368|65=22+240|43=23+546|47=24+536|35=25+200|70=26+207|65=27+240|27=28+518|47=29+536|65=30+240|52=31+465|340=32+523|42=33+546|34=34+536|51=35+499|44=36+284|70=37+207|65=38+240|42=39+546|44=40+328|340=41+523|32=42+328|339=43+523|44=44+328|31=45+523|65=46+240|38=47+256|31=48+523|45=49+478|65=50+240|36=51+248|27=52+518|46=53+344|46=54+344|31=55+523|45=56+478|65=57+240|30=58+546|31=59+523|65=6 …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: German shapes without .notdef",
+   "text": "Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Große Straße. ẞ",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Große Straße. ẞ --no-glyph-names",
+   "output": "[6=0+440|27=1+518|38=2+256|45=3+478|29=4+508|34=5+536|31=6+523|45=7+478|65=8+240|330=9+637|28=10+546|31=11+523|40=12+536|65=13+240|48=14+489|41=15+556|40=16+536|65=17+240|24=18+576|51=19+499|38=20+256|41=21+556|42=22+546|34=23+536|41=24+556|40=25+536|39=26+796|47=27+536|45=28+478|35=29+200|37=30+502|65=31+240|43=32+546|47=33+536|336=34+518|38=35+256|46=36+344|65=37+240|36=38+248|31=39+523|30=40+546|31=41+523|40=42+536|65=43+240|33=44+546|44=45+328|352=46+556|171=47+620|31=48+523|44=49+328|31=50+523|40=51+536|65=52+240|26=53+563|49=54+696|31=55+523|44=56+328|33=57+546|69=58+207|65=59+240|7=60+6 …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Spanish shapes without .notdef",
+   "text": "El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío; añoraba a su querido cachorro. ¿Qué tal? ¡Hola!",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=El pingüino Wenceslao hizo kilómetros bajo exhaustiva lluvia y frío; añoraba a su querido cachorro. ¿Qué tal? ¡Hola! --no-glyph-names",
+   "output": "[5=0+551|38=1+256|65=2+240|42=3+546|35=4+200|40=5+536|33=6+546|356=7+536|35=8+200|40=9+536|41=10+556|65=11+240|23=12+802|31=13+523|40=14+536|29=15+508|31=16+523|45=17+478|38=18+256|27=19+518|41=20+556|65=21+240|34=22+536|35=23+200|52=24+465|41=25+556|65=26+240|37=27+502|35=28+200|38=29+256|349=30+556|39=31+796|31=32+523|46=33+344|44=34+328|41=35+556|45=36+478|65=37+240|28=38+546|27=39+518|36=40+248|41=41+556|65=42+240|31=43+523|50=44+474|34=45+536|27=46+518|47=47+536|45=48+478|46=49+344|35=50+200|48=51+485|27=52+518|65=53+240|38=54+256|38=55+256|47=56+536|48=57+499|35=58+200|27=59+518|65=60+24 …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Italian shapes without .notdef",
+   "text": "Pranzo d’acqua fa volti sghembi. Perché città più così è",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Pranzo d’acqua fa volti sghembi. Perché città più così è --no-glyph-names",
+   "output": "[16=0+599|44=1+334|27=2+518|40=3+536|52=4+465|41=5+556|65=6+240|30=7+546|82=8+127|27=9+518|29=10+508|43=11+546|47=12+536|27=13+518|65=14+240|32=15+318|27=16+518|65=17+240|48=18+489|41=19+556|38=20+256|46=21+344|35=22+200|65=23+240|45=24+478|33=25+546|34=26+536|31=27+523|39=28+796|28=29+546|35=30+200|69=31+207|65=32+240|16=33+577|31=34+523|44=35+328|29=36+508|34=37+536|340=38+523|65=39+240|29=40+508|35=41+200|46=42+344|46=43+344|332=44+518|65=45+240|42=46+546|35=47+200|353=48+536|65=49+240|29=50+508|41=51+556|45=52+478|343=53+200|65=54+240|339=55+523]",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Portuguese shapes without .notdef",
+   "text": "Luís argüia à Júlia que «brações, fé, chá, óxido, pôr, zângão» eram palavras do português. Ação, coração",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Luís argüia à Júlia que «brações, fé, chá, óxido, pôr, zângão» eram palavras do português. Ação, coração --no-glyph-names",
+   "output": "[12=0+530|47=1+536|344=2+200|45=3+478|65=4+240|27=5+518|44=6+328|33=7+546|356=8+536|35=9+200|27=10+518|65=11+240|332=12+518|65=13+240|10=14+438|354=15+536|38=16+256|35=17+200|27=18+518|65=19+240|43=20+546|47=21+536|31=22+523|65=23+240|90=24+508|28=25+546|44=26+334|27=27+518|338=28+508|351=29+556|31=30+523|45=31+478|70=32+207|65=33+240|32=34+334|340=35+523|70=36+207|65=37+240|29=38+508|34=39+536|333=40+518|70=41+207|65=42+240|349=43+542|50=44+474|35=45+200|30=46+546|41=47+544|70=48+207|65=49+240|42=50+546|350=51+556|44=52+284|70=53+207|65=54+240|52=55+465|334=56+518|40=57+536|33=58+546|335=59+5 …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Dutch shapes without .notdef",
+   "text": "Pa’s wijze lynx bezag vroom het fikse aquaduct. IJsselmeer ĳ",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Pa’s wijze lynx bezag vroom het fikse aquaduct. IJsselmeer ĳ --no-glyph-names",
+   "output": "[16=0+573|27=1+518|82=2+187|45=3+478|65=4+240|49=5+704|35=6+200|36=7+248|52=8+465|31=9+523|65=10+240|38=11+256|51=12+499|40=13+536|50=14+474|65=15+240|28=16+546|31=17+523|52=18+465|27=19+518|33=20+546|65=21+240|48=22+499|44=23+328|41=24+556|41=25+556|39=26+796|65=27+240|34=28+536|31=29+523|46=30+344|65=31+240|196=32+451|37=34+502|45=35+478|31=36+523|65=37+240|27=38+518|43=39+546|47=40+536|27=41+518|30=42+546|47=43+536|29=44+508|46=45+344|69=46+207|65=47+240|9=48+292|10=49+438|45=50+478|45=51+478|31=52+523|38=53+256|39=54+796|31=55+523|31=56+523|44=57+368|65=58+240|194=59+438]",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Danish shapes without .notdef",
+   "text": "Høj bly gom vandt fræk sexquiz på wc. Smørrebrød Æble Ørn Åse",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Høj bly gom vandt fræk sexquiz på wc. Smørrebrød Æble Ørn Åse --no-glyph-names",
+   "output": "[8=0+624|180=1+556|36=2+248|65=3+240|28=4+546|38=5+256|51=6+499|65=7+240|33=8+546|41=9+556|39=10+796|65=11+240|48=12+485|27=13+518|40=14+536|30=15+546|46=16+344|65=17+240|32=18+318|44=19+334|168=20+877|37=21+502|65=22+240|45=23+478|31=24+523|50=25+474|43=26+546|47=27+536|35=28+200|52=29+465|65=30+240|42=31+546|337=32+518|65=33+240|49=34+696|29=35+508|69=36+207|65=37+240|19=38+575|39=39+796|180=40+556|44=41+368|44=42+328|31=43+523|28=44+546|44=45+328|180=46+556|30=47+546|65=48+240|167=49+920|28=50+546|38=51+256|31=52+523|65=53+240|179=54+654|44=55+368|40=56+536|65=57+240|311=58+626|45=59+478|31 …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Norwegian shapes without .notdef",
+   "text": "Vår sære Zulu fra badeøya spilte jo whist og quickstep i min taxi. Blåbærsyltetøy",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Vår sære Zulu fra badeøya spilte jo whist og quickstep i min taxi. Blåbærsyltetøy --no-glyph-names",
+   "output": "[22=0+542|337=1+518|44=2+368|65=3+240|45=4+478|168=5+877|44=6+328|31=7+523|65=8+240|26=9+563|47=10+536|38=11+256|47=12+536|65=13+240|32=14+318|44=15+334|27=16+518|65=17+240|28=18+546|27=19+518|30=20+546|31=21+523|180=22+544|51=23+485|27=24+518|65=25+240|45=26+478|42=27+546|35=28+200|38=29+256|46=30+344|31=31+523|65=32+240|36=33+248|41=34+556|65=35+240|49=36+704|34=37+536|35=38+200|45=39+478|46=40+344|65=41+240|41=42+556|33=43+546|65=44+240|43=45+546|47=46+536|35=47+200|29=48+508|37=49+502|45=50+478|46=51+344|31=52+523|42=53+546|65=54+240|35=55+200|65=56+240|39=57+796|35=58+200|40=59+536|65=60+ …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Swedish shapes without .notdef",
+   "text": "Flygande bäckasiner söka hwila på mjuka tuvor. Åäö ÅÄÖ",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Flygande bäckasiner söka hwila på mjuka tuvor. Åäö ÅÄÖ --no-glyph-names",
+   "output": "[6=0+476|38=1+256|51=2+489|33=3+546|27=4+518|40=5+536|30=6+546|31=7+523|65=8+240|28=9+546|336=10+518|29=11+508|37=12+502|27=13+518|45=14+478|35=15+200|40=16+536|31=17+523|44=18+368|65=19+240|45=20+478|352=21+556|37=22+502|27=23+518|65=24+240|34=25+536|49=26+704|35=27+200|38=28+256|27=29+518|65=30+240|42=31+546|337=32+518|65=33+240|39=34+796|36=35+248|47=36+536|37=37+502|27=38+518|65=39+240|46=40+344|47=41+536|48=42+489|41=43+556|44=44+284|69=45+207|65=46+240|311=47+626|336=48+518|352=49+556|65=50+240|311=51+626|310=52+608|326=53+654]",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Finnish shapes without .notdef",
+   "text": "Törkylempijävongahdus. Ääliö älä lyö, ööliä läikkyy. Šakki Žemaitija",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Törkylempijävongahdus. Ääliö älä lyö, ööliä läikkyy. Šakki Žemaitija --no-glyph-names",
+   "output": "[20=0+481|352=1+556|44=2+368|37=3+512|51=4+499|38=5+256|31=6+523|39=7+796|42=8+546|35=9+200|36=10+248|336=11+518|48=12+489|41=13+556|40=14+536|33=15+546|27=16+518|34=17+536|30=18+546|47=19+536|45=20+478|69=21+207|65=22+240|310=23+626|336=24+518|38=25+256|35=26+200|352=27+556|65=28+240|336=29+518|38=30+256|336=31+518|65=32+240|38=33+256|51=34+489|352=35+544|70=36+207|65=37+240|352=38+556|352=39+556|38=40+256|35=41+200|336=42+518|65=43+240|38=44+256|336=45+518|35=46+200|37=47+502|37=48+512|51=49+499|51=50+427|69=51+207|65=52+240|438=53+575|27=54+518|37=55+502|37=56+502|35=57+200|65=58+240|465=59 …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Icelandic shapes without .notdef",
+   "text": "Kæmi ný öxi hér, ykist þjófum nú bæði víl og ádrepa. Þórður Ægir Ýr ð",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Kæmi ný öxi hér, ykist þjófum nú bæði víl og ádrepa. Þórður Ægir Ýr ð --no-glyph-names",
+   "output": "[11=0+593|168=1+877|39=2+796|35=3+200|65=4+240|40=5+536|357=6+499|65=7+240|352=8+542|50=9+474|35=10+200|65=11+240|34=12+536|340=13+523|44=14+284|70=15+207|65=16+240|51=17+499|37=18+502|35=19+200|45=20+478|46=21+344|65=22+240|174=23+546|36=24+248|349=25+556|32=26+318|47=27+536|39=28+796|65=29+240|40=30+536|354=31+536|65=32+240|28=33+546|168=34+877|177=35+552|35=36+200|65=37+240|48=38+499|344=39+200|38=40+256|65=41+240|41=42+556|33=43+546|65=44+240|333=45+518|30=46+546|44=47+328|31=48+523|42=49+546|27=50+518|69=51+207|65=52+240|173=53+599|349=54+556|44=55+368|177=56+552|47=57+536|44=58+368|65=59 …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Polish shapes without .notdef",
+   "text": "Pchnąć w tę łódź jeża lub ośm skrzyń fig. Zażółć gęślą jaźń. ĄĆĘŁŃÓŚŹŻ",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Pchnąć w tę łódź jeża lub ośm skrzyń fig. Zażółć gęślą jaźń. ĄĆĘŁŃÓŚŹŻ --no-glyph-names",
+   "output": "[16=0+577|29=1+508|34=2+536|40=3+536|364=4+518|366=5+508|65=6+240|49=7+704|65=8+240|46=9+344|382=10+523|65=11+240|184=12+256|349=13+556|30=14+546|462=15+465|65=16+240|36=17+248|31=18+523|464=19+465|27=20+518|65=21+240|38=22+256|47=23+536|28=24+546|65=25+240|41=26+556|433=27+478|39=28+796|65=29+240|45=30+478|37=31+502|44=32+356|52=33+465|51=34+499|415=35+536|65=36+240|196=37+451|33=39+546|69=40+207|65=41+240|26=42+563|27=43+518|464=44+465|349=45+556|184=46+256|366=47+508|65=48+240|33=49+546|382=50+523|433=51+478|38=52+256|364=53+518|65=54+240|36=55+248|27=56+518|462=57+465|415=58+536|69=59+207| …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Czech shapes without .notdef",
+   "text": "Příliš žluťoučký kůň úpěl ďábelské ódy. Ďábel ťuká Ľ ľ Ř ř Ě ě Ů ů",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Příliš žluťoučký kůň úpěl ďábelské ódy. Ďábel ťuká Ľ ľ Ř ř Ě ě Ů ů --no-glyph-names",
+   "output": "[16=0+599|431=1+404|344=2+200|38=3+256|35=4+200|439=5+478|65=6+240|466=7+465|38=8+256|47=9+536|443=10+344|41=11+556|47=12+536|372=13+508|37=14+502|357=15+499|65=16+240|37=17+502|451=18+536|419=19+536|65=20+240|354=21+536|42=22+546|384=23+523|38=24+256|65=25+240|374=26+562|333=27+518|28=28+546|31=29+523|38=30+256|45=31+478|37=32+502|340=33+523|65=34+240|349=35+556|30=36+546|51=37+427|69=38+207|65=39+240|373=40+659|333=41+518|28=42+546|31=43+523|38=44+256|65=45+240|443=46+344|47=47+536|37=48+502|333=49+518|65=50+240|412=51+530|65=52+240|413=53+256|65=54+240|430=55+599|65=56+240|431=57+368|65=58+ …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Slovak shapes without .notdef",
+   "text": "Kŕdeľ šťastných ďatľov učí pri ústí Váhu mĺkveho koňa obhrýzať kôru a žrať čerstvé mäso. Ĺ ĺ Ŕ ŕ Ô ô Ä ä",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Kŕdeľ šťastných ďatľov učí pri ústí Váhu mĺkveho koňa obhrýzať kôru a žrať čerstvé mäso. Ĺ ĺ Ŕ ŕ Ô ô Ä ä --no-glyph-names",
+   "output": "[11=0+593|427=1+328|30=2+546|31=3+523|413=4+256|65=5+240|439=6+478|443=7+344|27=8+518|45=9+478|46=10+344|40=11+536|357=12+489|29=13+508|34=14+536|65=15+240|374=16+546|27=17+518|46=18+344|413=19+256|41=20+544|48=21+499|65=22+240|47=23+536|372=24+508|344=25+200|65=26+240|42=27+546|44=28+368|35=29+200|65=30+240|354=31+536|45=32+478|46=33+344|344=34+200|65=35+240|22=36+542|333=37+518|34=38+536|47=39+536|65=40+240|39=41+796|409=42+256|37=43+512|48=44+489|31=45+523|34=46+536|41=47+556|65=48+240|37=49+502|41=50+556|419=51+536|27=52+518|65=53+240|41=54+556|28=55+546|34=56+536|44=57+358|357=58+499|52=5 …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Hungarian shapes without .notdef",
+   "text": "Árvíztűrő tükörfúrógép. Ő ő Ű ű",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Árvíztűrő tükörfúrógép. Ő ő Ű ű --no-glyph-names",
+   "output": "[307=0+626|44=1+358|48=2+499|344=3+200|52=4+465|46=5+344|453=6+536|44=7+328|425=8+556|65=9+240|46=10+344|356=11+536|37=12+502|352=13+556|44=14+368|32=15+334|354=16+536|44=17+328|349=18+556|33=19+546|340=20+523|42=21+534|69=22+207|65=23+240|424=24+654|65=25+240|425=26+556|65=27+240|452=28+637|65=29+240|453=30+536]",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Romanian shapes without .notdef",
+   "text": "Muzicologă în bej vând whisky și tequila, preț fix. Ă ă Â â Î î Ș ș Ț ț",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Muzicologă în bej vând whisky și tequila, preț fix. Ă ă Â â Î î Ș ș Ț ț --no-glyph-names",
+   "output": "[13=0+780|47=1+536|52=2+465|35=3+200|29=4+508|41=5+556|38=6+256|41=7+556|33=8+546|362=9+518|65=10+240|345=11+200|40=12+536|65=13+240|28=14+546|31=15+523|36=16+248|65=17+240|48=18+485|334=19+518|40=20+536|30=21+546|65=22+240|49=23+704|34=24+536|35=25+200|45=26+478|37=27+512|51=28+499|65=29+240|468=30+478|35=31+200|65=32+240|46=33+344|31=34+523|43=35+546|47=36+536|35=37+200|38=38+256|27=39+518|70=40+207|65=41+240|42=42+546|44=43+328|31=44+523|470=45+344|65=46+240|196=47+451|50=49+474|69=50+207|65=51+240|361=52+626|65=53+240|362=54+518|65=55+240|308=56+626|65=57+240|334=58+518|65=59+240|319=60+29 …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Turkish shapes without .notdef",
+   "text": "Pijamalı hasta yağız şoföre çabucak güvendi. İstanbul ı Ğ ğ Ş ş Ç ç Ö ö Ü ü",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Pijamalı hasta yağız şoföre çabucak güvendi. İstanbul ı Ğ ğ Ş ş Ç ç Ö ö Ü ü --no-glyph-names",
+   "output": "[16=0+599|35=1+200|36=2+248|27=3+518|39=4+796|27=5+518|38=6+256|63=7+200|65=8+240|34=9+536|27=10+518|45=11+478|46=12+344|27=13+518|65=14+240|51=15+485|27=16+518|388=17+546|63=18+200|52=19+465|65=20+240|437=21+478|41=22+556|32=23+340|352=24+556|44=25+328|31=26+523|65=27+240|338=28+508|27=29+518|28=30+546|47=31+536|29=32+508|27=33+518|37=34+502|65=35+240|33=36+546|356=37+536|48=38+489|31=39+523|40=40+536|30=41+546|35=42+200|69=43+207|65=44+240|403=45+292|45=46+478|46=47+344|27=48+518|40=49+536|28=50+546|47=51+536|38=52+256|65=53+240|63=54+200|65=55+240|387=56+634|65=57+240|388=58+546|65=59+240|4 …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Latvian shapes without .notdef",
+   "text": "Glāžšķūņa rūķīši dzērumā čiepj Baha koncertflīģeļu vākus. Ā Č Ē Ģ Ī Ķ Ļ Ņ Š Ū Ž ģ ķ ļ ņ ŗ",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Glāžšķūņa rūķīši dzērumā čiepj Baha koncertflīģeļu vākus. Ā Č Ē Ģ Ī Ķ Ļ Ņ Š Ū Ž ģ ķ ļ ņ ŗ --no-glyph-names",
+   "output": "[7=0+634|38=1+256|360=2+518|466=3+465|439=4+478|407=5+502|447=6+536|417=7+536|27=8+518|65=9+240|44=10+360|447=11+536|407=12+502|398=13+200|439=14+478|35=15+200|65=16+240|30=17+546|52=18+465|376=19+523|44=20+360|47=21+536|39=22+796|360=23+518|65=24+240|372=25+508|35=26+200|31=27+523|42=28+546|36=29+248|65=30+240|2=31+609|27=32+518|34=33+536|27=34+518|65=35+240|37=36+502|41=37+556|40=38+536|29=39+508|31=40+523|44=41+346|46=42+344|197=43+512|398=45+200|392=46+546|31=47+523|411=48+256|47=49+536|65=50+240|48=51+485|360=52+518|37=53+502|47=54+536|45=55+478|69=56+207|65=57+240|359=58+626|65=59+240|37 …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Lithuanian shapes without .notdef",
+   "text": "Įlinkdama fechtuotojo špaga sublykčiojusi pragręžė apvalų arbūzą. Ą Č Ę Ė Į Š Ų Ū Ž ė ų ū",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Įlinkdama fechtuotojo špaga sublykčiojusi pragręžė apvalų arbūzą. Ą Č Ę Ė Į Š Ų Ū Ž ė ų ū --no-glyph-names",
+   "output": "[401=0+292|38=1+256|35=2+200|40=3+536|37=4+502|30=5+546|27=6+518|39=7+796|27=8+518|65=9+240|32=10+318|31=11+523|29=12+508|34=13+536|46=14+344|47=15+536|41=16+556|46=17+344|41=18+556|36=19+248|41=20+556|65=21+240|439=22+478|42=23+546|27=24+518|33=25+546|27=26+518|65=27+240|45=28+478|47=29+536|28=30+546|38=31+256|51=32+499|37=33+502|372=34+508|35=35+200|41=36+556|36=37+248|47=38+536|45=39+478|35=40+200|65=41+240|42=42+546|44=43+334|27=44+518|33=45+546|44=46+328|382=47+523|466=48+465|380=49+523|65=50+240|27=51+518|42=52+534|48=53+485|27=54+518|38=55+256|455=56+536|65=57+240|27=58+518|44=59+368|28 …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Estonian shapes without .notdef",
+   "text": "See väike mölder jõuab rongile hüpata. Õ õ Ä ä Ö ö Ü ü Š š Ž ž",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=See väike mölder jõuab rongile hüpata. Õ õ Ä ä Ö ö Ü ü Š š Ž ž --no-glyph-names",
+   "output": "[19=0+575|31=1+523|31=2+523|65=3+240|48=4+485|336=5+518|35=6+200|37=7+502|31=8+523|65=9+240|39=10+796|352=11+556|38=12+256|30=13+546|31=14+523|44=15+368|65=16+240|36=17+248|351=18+556|47=19+536|27=20+518|28=21+546|65=22+240|44=23+328|41=24+556|40=25+536|33=26+546|35=27+200|38=28+256|31=29+523|65=30+240|34=31+536|356=32+536|42=33+546|27=34+518|46=35+344|27=36+518|69=37+207|65=38+240|325=39+654|65=40+240|351=41+556|65=42+240|310=43+626|65=44+240|336=45+518|65=46+240|326=47+654|65=48+240|352=49+556|65=50+240|330=51+637|65=52+240|356=53+536|65=54+240|438=55+575|65=56+240|439=57+478|65=58+240|465=5 …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Catalan shapes without .notdef",
+   "text": "Jove xef, porti whisky amb quinze glaçons d’hidrogen, coi! Ŀ ŀ l·l Ç ç À è é í ï ò ó ú ü",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Jove xef, porti whisky amb quinze glaçons d’hidrogen, coi! Ŀ ŀ l·l Ç ç À è é í ï ò ó ú ü --no-glyph-names",
+   "output": "[10=0+438|41=1+544|48=2+489|31=3+523|65=4+240|50=5+474|31=6+523|32=7+294|70=8+207|65=9+240|42=10+546|41=11+556|44=12+346|46=13+344|35=14+200|65=15+240|49=16+704|34=17+536|35=18+200|45=19+478|37=20+512|51=21+499|65=22+240|27=23+518|39=24+796|28=25+546|65=26+240|43=27+546|47=28+536|35=29+200|40=30+536|52=31+465|31=32+523|65=33+240|33=34+546|38=35+256|27=36+518|338=37+508|41=38+556|40=39+536|45=40+478|65=41+240|30=42+546|82=43+187|34=44+536|35=45+200|30=46+546|44=47+328|41=48+556|33=49+546|31=50+523|40=51+536|70=52+207|65=53+240|29=54+508|41=55+556|35=56+200|76=57+227|65=58+240|191=59+697|65=60+2 …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Welsh shapes without .notdef",
+   "text": "Dŵr a thân. Ŵ ŵ Ŷ ŷ Â â Ê ê Î î Ô ô Û û Ẁ ẁ Ẃ ẃ Ẅ ẅ Ỳ ỳ",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Dŵr a thân. Ŵ ŵ Ŷ ŷ Â â Ê ê Î î Ô ô Û û Ẁ ẁ Ẃ ẃ Ẅ ẅ Ỳ ỳ --no-glyph-names",
+   "output": "[4=0+659|457=1+704|44=2+368|65=3+240|27=4+518|65=5+240|46=6+344|34=7+536|334=8+518|40=9+536|69=10+207|65=11+240|456=12+836|65=13+240|457=14+704|65=15+240|458=16+581|65=17+240|459=18+499|65=19+240|308=20+626|65=21+240|334=22+518|65=23+240|315=24+551|65=25+240|341=26+523|65=27+240|319=28+292|65=29+240|345=30+200|65=31+240|324=32+654|65=33+240|350=34+556|65=35+240|329=36+637|65=37+240|355=38+536|65=39+240|485=40+836|65=41+240|486=42+704|65=43+240|487=44+836|65=45+240|488=46+704|65=47+240|489=48+836|65=49+240|490=50+704|65=51+240|491=52+581|65=53+240|492=54+499]",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Irish shapes without .notdef",
+   "text": "D’fhuascail Íosa Úrmhac na hÓighe Beannaithe pór Éava agus Ádhaimh. Ḃ ḃ Ċ ċ Ḋ ḋ Ḟ ḟ Ġ ġ Ṁ ṁ Ṗ ṗ Ṡ ṡ Ṫ ṫ",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=D’fhuascail Íosa Úrmhac na hÓighe Beannaithe pór Éava agus Ádhaimh. Ḃ ḃ Ċ ċ Ḋ ḋ Ḟ ḟ Ġ ġ Ṁ ṁ Ṗ ṗ Ṡ ṡ Ṫ ṫ --no-glyph-names",
+   "output": "[4=0+659|82=1+187|32=2+332|34=3+536|47=4+536|27=5+518|45=6+478|29=7+508|27=8+518|35=9+200|38=10+256|65=11+240|318=12+292|41=13+556|45=14+478|27=15+518|65=16+240|328=17+637|44=18+368|39=19+796|34=20+536|27=21+518|29=22+508|65=23+240|40=24+536|27=25+518|65=26+240|34=27+536|323=28+654|35=29+200|33=30+546|34=31+536|31=32+523|65=33+240|2=34+609|31=35+523|27=36+518|40=37+536|40=38+536|27=39+518|35=40+200|46=41+344|34=42+536|31=43+523|65=44+240|42=45+546|349=46+556|44=47+368|65=48+240|314=49+551|27=50+518|48=51+485|27=52+518|65=53+240|27=54+518|33=55+546|47=56+536|45=57+478|65=58+240|307=59+626|30=60 …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Maltese shapes without .notdef",
+   "text": "Ċ ċ Ġ ġ Ħ ħ Ż ż għandi l-ħbieb",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Ċ ċ Ġ ġ Ħ ħ Ż ż għandi l-ħbieb --no-glyph-names",
+   "output": "[369=0+614|65=1+240|370=2+508|65=3+240|389=4+634|65=5+240|390=6+546|65=7+240|181=8+624|65=9+240|182=10+536|65=11+240|463=12+563|65=13+240|464=14+465|65=15+240|33=16+546|182=17+536|27=18+518|40=19+536|30=20+546|35=21+200|65=22+240|38=23+256|94=24+380|182=25+536|28=26+546|35=27+200|31=28+523|28=29+546]",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Croatian shapes without .notdef",
+   "text": "Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje. Č č Ć ć Đ đ Š š Ž ž",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje. Č č Ć ć Đ đ Š š Ž ž --no-glyph-names",
+   "output": "[7=0+634|41=1+556|36=2+248|27=3+518|52=4+465|40=5+536|35=6+200|65=7+240|178=8+546|27=9+518|372=10+508|35=11+200|366=12+508|65=13+240|45=14+478|65=15+240|28=16+546|35=17+200|29=18+508|35=19+200|37=20+502|38=21+256|41=22+556|39=23+796|65=24+240|30=25+546|44=26+356|466=27+465|35=28+200|65=29+240|34=30+536|39=31+796|31=32+523|38=33+256|36=34+248|65=35+240|35=36+200|65=37+240|196=38+451|40=40+536|47=41+536|65=42+240|48=43+485|27=44+518|46=45+344|47=46+536|65=47+240|47=48+536|65=49+240|30=50+546|466=51+465|31=52+523|42=53+546|47=54+536|65=55+240|40=56+536|41=57+556|439=58+478|40=59+536|36=60+248|31= …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: Punctuation & symbols shapes without .notdef",
+   "text": "«»‹›“”‘’„‚…–—•·©®™°§¶†‡ #%‰ $€£¥₹₽₺₩¢ +−×÷=≠<>≤≥±¬~≈ ∞∑∆√∂∏∫πΩµ◊ ←→↑↓ @&/\\|¦ ^`¨¯´¸˘˙˚˛˜˝ [](){}",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=«»‹›“”‘’„‚…–—•·©®™°§¶†‡ #%‰ $€£¥₹₽₺₩¢ +−×÷=≠<>≤≥±¬~≈ ∞∑∆√∂∏∫πΩµ◊ ←→↑↓ @&/\\|¦ ^`¨¯´¸˘˙˚˛˜˝ [](){} --no-glyph-names",
+   "output": "[90=0+508|91=1+508|88=2+288|89=3+288|86=4+364|85=5+364|83=6+187|82=7+187|87=8+384|84=9+207|73=10+621|97=11+620|98=12+1040|75=13+376|74=14+207|123=15+832|124=16+832|125=17+840|118=18+380|119=19+530|120=20+680|121=21+480|122=22+480|65=23+240|113=24+620|116=25+800|117=26+1180|65=27+240|128=28+575|132=29+614|130=30+600|131=31+600|134=32+620|135=33+599|137=34+550|136=35+836|129=36+508|65=37+240|138=38+652|99=39+652|140=40+652|141=41+652|142=42+652|143=43+652|144=44+652|145=45+652|146=46+652|147=47+652|139=48+652|148=49+652|149=50+652|150=51+652|65=52+240|152=53+840|154=54+640|153=55+640|155=56+660| …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "coverage: ASCII shapes without .notdef",
+   "text": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text= !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ --no-glyph-names",
+   "output": "[65=0+240|76=1+227|81=2+374|113=3+620|128=4+575|116=5+800|114=6+690|80=7+182|106=8+326|107=9+326|112=10+460|138=11+652|70=12+207|94=13+380|69=14+207|101=15+350|53=16+567|54=17+364|55=18+537|56=19+537|57=20+572|58=21+542|59=22+562|60=23+522|61=24+562|62=25+562|71=26+207|72=27+207|144=28+652|142=29+652|145=30+652|78=31+518|115=32+900|1=33+626|2=34+609|3=35+614|4=36+659|5=37+551|6=38+460|7=39+634|8=40+624|9=41+292|10=42+438|11=43+593|12=44+530|13=45+780|14=46+644|15=47+654|16=48+589|17=49+654|18=50+599|19=51+575|20=52+577|21=53+637|22=54+606|23=55+836|24=56+576|25=57+581|26=58+563|108=59+330|102= …",
+   "pass": true,
+   "missing": []
+  },
+  {
+   "title": "liga+kern at wght=200",
+   "text": "office AVATAR",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=office AVATAR --variations=wght=200",
+   "output": "[o=0+560|f_f_i=1+698|c=4+512|e=5+527|space=6+244|A=7+542|V=8+522|A=9+548|T=10+499|A=11+630|R=12+603]",
+   "pass": true
+  },
+  {
+   "title": "liga+kern at wght=800,wdth=75",
+   "text": "office AVATAR",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=office AVATAR --variations=wght=800,wdth=75",
+   "output": "[o=0+465|f_f_i=1+667|c=4+435|e=5+457|space=6+192|A=7+479|V=8+432|A=9+484|T=10+416|A=11+544|R=12+499]",
+   "pass": true
+  },
+  {
+   "title": "liga+kern at wght=600,wdth=125",
+   "text": "office AVATAR",
+   "command": "hb-shape fonts/Apertide[wdth,wght].ttf --text=office AVATAR --variations=wght=600,wdth=125",
+   "output": "[o=0+689|f_f_i=1+950|c=4+646|e=5+677|space=6+306|A=7+725|V=8+664|A=9+732|T=10+630|A=11+829|R=12+745]",
+   "pass": true
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+APERTIDE — PRIVATE REVIEW LICENSE
+Version 1.0 · 14 October 2026
+
+This license covers the original Apertide font outlines, source recipes, compiled font binaries, Letterform application, specimen and original demonstration media produced for Jeff Grimes in build A4.
+
+Permission is granted to Jeff Grimes and reviewers he authorizes to install, run, inspect, copy, modify and privately share these materials solely for evaluation and production review. Embedding in private review PDFs and privately accessible test applications is permitted.
+
+Public distribution, commercial licensing, sale, public font hosting, social publication and release under an open-source license are not authorized by this private-review license. Jeff decides whether and under what terms any release will occur. No trademark clearance is represented.
+
+No existing font outlines were used as source material. All glyph drawing recipes and outlines in this family were generated from original numerical geometry for this commission. This statement describes the production process; it is not a legal opinion about copyrightability or exclusivity of AI-assisted work.
+
+The materials are supplied AS IS, without warranty of fitness, compatibility or non-infringement. Machine checks and agent review do not constitute professional foundry certification. Third-party software remains subject to its own license; those licenses do not restrict independently generated font output unless stated by that software's license. See PROVENANCE.md for the precise tool inventory and notices.

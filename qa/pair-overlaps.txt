@@ -1,0 +1,10 @@
+200/75: 0 colliding pair(s)
+200/125: 0 colliding pair(s)
+400/100: 0 colliding pair(s)
+600/88: 0 colliding pair(s)
+700/75: 0 colliding pair(s)
+800/75: 0 colliding pair(s)
+800/100: 0 colliding pair(s)
+800/125: 0 colliding pair(s)
+
+3696 neighbouring glyph pairs tested over 8 locations; collisions: 0

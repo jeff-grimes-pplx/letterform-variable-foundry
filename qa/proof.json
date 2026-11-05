@@ -1,0 +1,31 @@
+{
+  "stage": "native thin proof",
+  "font_sha256": "b289498246d60333aed31948384b81a9d2eec06b6207cb44ed8ab575941e6936",
+  "glyphs": 14,
+  "axes": [
+    [
+      "wght",
+      200.0,
+      400.0,
+      800.0
+    ],
+    [
+      "wdth",
+      75.0,
+      100.0,
+      125.0
+    ]
+  ],
+  "masters": 9,
+  "features": {
+    "+liga": "[f_i=0+520]",
+    "-liga": "[f=0+332|i=1+194]",
+    "+kern": "[A=0+538|V=1+518|A=2+608]",
+    "-kern": "[A=0+608|V=1+588|A=2+608]"
+  },
+  "status": "PASS",
+  "limitations": [
+    "Proof set only; full coverage, specimen, app, checker and films not yet built.",
+    "Visual proof repaired diagonal-thickness sign error before expanding repertoire."
+  ]
+}

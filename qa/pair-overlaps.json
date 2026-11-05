@@ -1,0 +1,59 @@
+{
+ "font": "fonts/Apertide[wdth,wght].ttf",
+ "locations": [
+  [
+   200,
+   75
+  ],
+  [
+   200,
+   125
+  ],
+  [
+   400,
+   100
+  ],
+  [
+   600,
+   88
+  ],
+  [
+   700,
+   75
+  ],
+  [
+   800,
+   75
+  ],
+  [
+   800,
+   100
+  ],
+  [
+   800,
+   125
+  ]
+ ],
+ "strings": {
+  "f-before (liga off)": "fi fí fì fî fï fĩ fī fĭ fį fı fj fĵ fb fh fk fl fł ft f? f) f] f} f! f| f/ fä fö fü fë fÿ fâ fê fô fû fá fé fó fú fà fè fò fù fã fõ fñ fā fē fō fū få fů fč fě fň fř fš fž fť fď fľ fţ fş fț fș fğ fĝ fĥ fĵ fŵ fŷ fẃ fẁ fẅ fỳ fċ fġ fḃ fḋ fḟ fṁ fṗ fṡ fṫ",
+  "ff-before (liga off)": "ffi ffí ffï ffî ffj ffb ffh ffk ffl ff? ff) ffä ffé ffü ffö",
+  "carons / accents in sequence": "přiřídíl ří ře řá řé řó řú řů řy řt řl řk řb řh řd řť ďí ťí ľí ňí šť čí žíl iř íř ìř îř ïř ĩř īř ĭř lř jř kř hř bř dř tř úř ůř éř ýř ďi ťi ľi ďì ťì ľì ďî ťî ľî ďï ťï ľï ďú ťú ľú ďá ťá ľá ďó ťó ľó ďé ťé ľé ďü ťü ľü ďö ťö ľö ďä ťä ľä ďô ľô ťô ďô ľů ďů ťů ďý ťý ľý ďñ ďã ďõ ďâ ďê ďà ďè ďò ďù ďā ďē ďō ďū ďě ďň ďš ďž ďč ďř ďľ ďť ďď ťť ľľ ď? ď) ď! ť? ť) ľ) ď” ť’ ľ’",
+  "dieresis / stacks": "ïëÿ ÄÖÜ äöü ÿï ïï ëï üï öï äï ïë ÏË ÄË ÖÜ ÜÏ",
+  "quotes & punctuation": "f' f\" f’ f” fʼ r’ r” v’ w’ y’ T’ V’ W’ Y’ P. P, F. F, T. T, V. V, Y. Y, r. r, v. v, w. w, y. y, 7. 7,",
+  "kerned pairs": "AV AW AY AT LT LV LY TA Ta Te To Tr Tu Ty VA Va Ve Vo WA Wa We Wo YA Ya Ye Yo PA Pa Pe Po FA Fa Fe Fo KO Ko RO Ro ro re rt ra rs vo va wo wa yo ya L’A f) f? ff",
+  "narrow i-marks (1.102)": "dîner Nîmes Hî Mî Vî Kï Yï Tî maître naïf fête île Îles îî ĩĭ ïĩ īī ĭĭ ïi iï iĭ íĭ Hawaïi",
+  "Ľ Ŀ đ Æ Œ (1.102)": "ĽV ĽY ĽT Ľ’ Ľ\" ĽUDIA ĽW Ŀ’ ĿL đĩa đã đi đó đĵ ÆV ÆT ÆY Æ’ ŒV ŒT ŒY",
+  "tails and arms (1.102)": "Q, Q; Q‚ FAQ, K2 k2 R2 A2 SKY KYIV kv kx mił był kąpiel następny ąj ęj ďb ďh ďk ďl ďt ťb ťh ťk ťl ťt ľb ľh ľk ľl ľt"
+ },
+ "collisions": {
+  "200/75": [],
+  "200/125": [],
+  "400/100": [],
+  "600/88": [],
+  "700/75": [],
+  "800/75": [],
+  "800/100": [],
+  "800/125": []
+ },
+ "pairs_tested": 3696
+}

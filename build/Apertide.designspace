@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="5.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="200" maximum="800" default="400">
+      <labels>
+        <label uservalue="200" name="ExtraLight"/>
+        <label uservalue="300" name="Light"/>
+        <label uservalue="400" name="Regular" elidable="true" linkeduservalue="700"/>
+        <label uservalue="500" name="Medium"/>
+        <label uservalue="600" name="SemiBold"/>
+        <label uservalue="700" name="Bold"/>
+        <label uservalue="800" name="ExtraBold"/>
+      </labels>
+    </axis>
+    <axis tag="wdth" name="Width" minimum="75" maximum="125" default="100">
+      <labels>
+        <label uservalue="75" name="Condensed"/>
+        <label uservalue="100" name="Normal" elidable="true"/>
+        <label uservalue="125" name="Extended"/>
+      </labels>
+    </axis>
+  </axes>
+  <sources>
+    <source filename="Apertide-200-75.ufo" name="Apertide 200 75" familyname="Apertide" stylename="Condensed ExtraLight">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Width" xvalue="75"/>
+      </location>
+    </source>
+    <source filename="Apertide-200-100.ufo" name="Apertide 200 100" familyname="Apertide" stylename="ExtraLight">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="Apertide-200-125.ufo" name="Apertide 200 125" familyname="Apertide" stylename="Extended ExtraLight">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Width" xvalue="125"/>
+      </location>
+    </source>
+    <source filename="Apertide-400-75.ufo" name="Apertide 400 75" familyname="Apertide" stylename="Condensed Regular">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="Width" xvalue="75"/>
+      </location>
+    </source>
+    <source filename="Apertide-400-100.ufo" name="Apertide 400 100" familyname="Apertide" stylename="Regular">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="Apertide-400-125.ufo" name="Apertide 400 125" familyname="Apertide" stylename="Extended Regular">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="Width" xvalue="125"/>
+      </location>
+    </source>
+    <source filename="Apertide-800-75.ufo" name="Apertide 800 75" familyname="Apertide" stylename="Condensed ExtraBold">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+        <dimension name="Width" xvalue="75"/>
+      </location>
+    </source>
+    <source filename="Apertide-800-100.ufo" name="Apertide 800 100" familyname="Apertide" stylename="ExtraBold">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="Apertide-800-125.ufo" name="Apertide 800 125" familyname="Apertide" stylename="Extended ExtraBold">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+        <dimension name="Width" xvalue="125"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance familyname="Apertide" stylename="ExtraLight" postscriptfontname="Apertide-ExtraLight" stylemapfamilyname="Apertide ExtraLight" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+    </instance>
+    <instance familyname="Apertide" stylename="Light" postscriptfontname="Apertide-Light" stylemapfamilyname="Apertide Light" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="300"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+    </instance>
+    <instance familyname="Apertide" stylename="Regular" postscriptfontname="Apertide-Regular" stylemapfamilyname="Apertide" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+    </instance>
+    <instance familyname="Apertide" stylename="Medium" postscriptfontname="Apertide-Medium" stylemapfamilyname="Apertide Medium" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+    </instance>
+    <instance familyname="Apertide" stylename="SemiBold" postscriptfontname="Apertide-SemiBold" stylemapfamilyname="Apertide SemiBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="600"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+    </instance>
+    <instance familyname="Apertide" stylename="Bold" postscriptfontname="Apertide-Bold" stylemapfamilyname="Apertide" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+    </instance>
+    <instance familyname="Apertide" stylename="ExtraBold" postscriptfontname="Apertide-ExtraBold" stylemapfamilyname="Apertide ExtraBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+        <dimension name="Width" xvalue="100"/>
+      </location>
+    </instance>
+    <instance familyname="Apertide" stylename="Condensed ExtraLight" postscriptfontname="Apertide-CondensedExtraLight" stylemapfamilyname="Apertide Condensed ExtraLight" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Width" xvalue="75"/>
+      </location>
+    </instance>
+    <instance familyname="Apertide" stylename="Condensed Regular" postscriptfontname="Apertide-CondensedRegular" stylemapfamilyname="Apertide Condensed Regular" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="Width" xvalue="75"/>
+      </location>
+    </instance>
+    <instance familyname="Apertide" stylename="Condensed Bold" postscriptfontname="Apertide-CondensedBold" stylemapfamilyname="Apertide Condensed Bold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+        <dimension name="Width" xvalue="75"/>
+      </location>
+    </instance>
+    <instance familyname="Apertide" stylename="Condensed ExtraBold" postscriptfontname="Apertide-CondensedExtraBold" stylemapfamilyname="Apertide Condensed ExtraBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+        <dimension name="Width" xvalue="75"/>
+      </location>
+    </instance>
+    <instance familyname="Apertide" stylename="Extended ExtraLight" postscriptfontname="Apertide-ExtendedExtraLight" stylemapfamilyname="Apertide Extended ExtraLight" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Width" xvalue="125"/>
+      </location>
+    </instance>
+    <instance familyname="Apertide" stylename="Extended Regular" postscriptfontname="Apertide-ExtendedRegular" stylemapfamilyname="Apertide Extended Regular" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+        <dimension name="Width" xvalue="125"/>
+      </location>
+    </instance>
+    <instance familyname="Apertide" stylename="Extended Bold" postscriptfontname="Apertide-ExtendedBold" stylemapfamilyname="Apertide Extended Bold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+        <dimension name="Width" xvalue="125"/>
+      </location>
+    </instance>
+    <instance familyname="Apertide" stylename="Extended ExtraBold" postscriptfontname="Apertide-ExtendedExtraBold" stylemapfamilyname="Apertide Extended ExtraBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+        <dimension name="Width" xvalue="125"/>
+      </location>
+    </instance>
+  </instances>
+</designspace>
